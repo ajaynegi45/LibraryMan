@@ -1,0 +1,130 @@
+  
+  .footer {
+    background-color: hsl(0, 0%, 12%);
+    color: #0aa5ff;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .newsletter-container form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 15px;
+  }
+  .newsletter-text{
+    margin: 10px 10px;
+  }
+  .input-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+  }
+  .input-container input{
+    font-size: 16px;
+    height: 43.5px;
+    width: 15rem; 
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 10px;
+
+    margin-right: 20px;
+  }
+  .input-container input:focus{
+    outline: none;
+
+    border: 2px solid #0aa5ff;
+  }
+
+  .custom-button {
+    height: 43.5;
+    font-weight: 500;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  
+  .footer p {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+
+
+@media (max-width: 401px) {
+
+.custom-button {
+  margin-top: 20px;
+}
+}
+  
+
+/* 
+
+  .custom-footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .custom-container {
+    padding: 20px;
+  }
+  
+  .custom-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-column {
+    flex: 0 0 auto;
+    margin: 10px;
+  }
+  
+  .custom-text {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .custom-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  .custom-footer-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .custom-link {
+    text-decoration: none;
+    color: #333;
+  } */
+
+

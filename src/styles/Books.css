@@ -1,0 +1,38 @@
+.search-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-div img {
+    width: 100%;
+    height: 40vw;
+}
+
+/* Style for the input field */
+.search-div input {
+    font-size: medium;
+    font-weight: 400;
+    position: absolute;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+    width: 40vw;
+    height: 50px;
+
+   
+}
+.search-div input:focus {
+    outline: none;
+    border: 2px solid #0aa5ff;
+}
+
+@media (max-width: 900px) {
+
+    .search-div input {
+        width: 65vw;
+        height: 45px;
+    }
+
+}

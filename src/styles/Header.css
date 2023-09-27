@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #010101;  */
+
+  /* white Background*/
+  background-color: #f2f2f7; 
+
+  font-family: "Ubuntu", sans-serif;
+}
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: transform 0.5s ease; */
+  transition: transform 0.6s ease-in-out; 
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  /* Add other styling as needed */
+
+}
+
+.navbar .logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #999999;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: #999999;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: white;
+}
+
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #999999;
+  border-radius: 10px;
+  border: 2px solid #0aa5ff;
+  transition: 0.2s;
+}
+.log-in:hover {
+  background-color: #0aa5ff;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(169, 169, 169);
+}
+
+section > h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  text-wrap: balance;
+}
+
+dialog {
+  border: 3px solid black;
+  border-radius: 7px;
+  text-shadow: 0.0vh 0.3vh 0.3vh rgba(124, 120, 120, 0.4); 
+}
+
+
+.dialog-menu{
+
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+
+  font-size: 5vh;
+}
+
+dialog::backdrop{
+
+}
+
+.close-button{
+  color: red;
+  border: 1.3px solid red;
+
+  border-radius: 50%;
+
+  padding: 3px 8px;
+}
+
+
+
+
+@media (max-width: 53rem) {
+  .navbar{
+    height: 60px;
+    padding: 20px 10px;
+  }
+  .navbar .logo img{
+    width: 50px;
+    height: 50px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu-links{
+    margin-top: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
