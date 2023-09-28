@@ -1,25 +1,26 @@
-import React from 'react'
+import React from 'react';
 import Header from '../components/Header';
-import '../styles/Home.css';
-import BillyButcher from '../assets/Billy Butcher.png';
-import Money from '../assets/Money.jpg';
-import HomeSearch from '../components/HomeSearch';
-
 import Footer from '../components/Footer';
+import Money from '../assets/images/Money.jpg';
+import HomeSearch from '../components/HomeSearch';
+import '../assets/styles/Home.css';
+
 
 const styles = {
-  color: "red", 
+  color: "red",
   fontSize: "10px",
   marginTop: "360px",
   marginLeft: "2px"
 };
 
 const Home = () => {
+
   return (
     <>
     <Header/>
 
     <HomeSearch/>
+
     <hr className='home-hr'/>
 
     <div className='div-featured'>
@@ -108,7 +109,7 @@ const Home = () => {
 
     <Footer/>
 
-    
+
     </>
   )
 }

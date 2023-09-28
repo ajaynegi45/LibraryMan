@@ -1,17 +1,18 @@
-.search-div{
+.searchBook-div{
+    margin-top: 5vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search-div img {
+.searchBook-div img {
     width: 100%;
     height: 40vw;
 }
 
 /* Style for the input field */
-.search-div input {
+.searchBook-div input {
     font-size: medium;
     font-weight: 400;
     position: absolute;
@@ -23,16 +24,22 @@
 
    
 }
-.search-div input:focus {
+.searchBook-div input:focus {
     outline: none;
     border: 2px solid #0aa5ff;
 }
 
 @media (max-width: 900px) {
 
-    .search-div input {
+    .searchBook-div input {
         width: 65vw;
         height: 45px;
     }
 
+}
+
+@media (max-width: 630px) {
+    .searchBook-div{
+        margin-top: 9.5vw ;
+    }
 }

@@ -1,17 +1,17 @@
 import React from 'react';
-import '../styles/HomeSearch.css';
-import blue from '../assets/blue.svg';
+import '../assets/styles/HomeSearch.css';
+import blue from '../assets/svg/blue.svg';
 import { NavLink } from 'react-router-dom';
 
 
 
-import book from '../assets/reading-books.svg';
-import BookLover from '../assets/BookLover.svg';
-import Education from '../assets/Education.svg';
-import Reading from '../assets/reading.svg';
-import Notebook from '../assets/Notebook.svg';
-import Book from '../assets/Book.svg';
-import skin from '../assets/skin.svg';
+import book from '../assets/svg/reading-books.svg';
+import BookLover from '../assets/svg/BookLover.svg';
+import Education from '../assets/svg/Education.svg';
+import Reading from '../assets/svg/reading.svg';
+import Notebook from '../assets/svg/Notebook.svg';
+import Book from '../assets/svg/Book.svg';
+import skin from '../assets/svg/skin.svg';
 
 
 
