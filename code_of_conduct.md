@@ -1,6 +1,6 @@
 # Code Of Conduct 📃
 
-Hello there, and welcome to my Book-API! 👋🏻
+Hello there, and welcome to my Library Project! 👋🏻
 
 My name is Ajay Negi, and I'm thrilled to share my creative work and professional experiences with you.
 
@@ -43,4 +43,4 @@ We are committed to creating and maintaining a welcoming and respectful communit
 ## Conclusion 👥
 We believe that a strong code of conduct is essential to maintaining a positive and inclusive community. We encourage all contributors to read and abide by this code of conduct, and to help us create a welcoming and supportive environment for all. 
 
-Thank you for being a part of the My Book-API project! ❤️✨
+Thank you for being a part of the My Library Project! ❤️✨
