@@ -1,23 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer';
-
-const styles = {
-  color: "red", 
-  fontSize: "10px",
-  marginTop: "360px"
-
-};
 
 const About = () => {
   return (
     <>
-    <Header/>
-
-    <h1 style={styles} >This is About Page</h1>
-    <h1 style={styles} >This is About Page</h1>
-    <h1 style={styles} >This is About Page</h1>
-
+    <Navbar/>
 
     <Footer/>
     </>

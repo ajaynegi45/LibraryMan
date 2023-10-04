@@ -1,26 +1,28 @@
 import React from 'react';
-import Header from '../components/Header';
+import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer';
 import Money from '../assets/images/Money.jpg';
 import HomeSearch from '../components/HomeSearch';
 import '../assets/styles/Home.css';
 
+import Hero from "../components/Hero.jsx";
+import Gitashlok from "../components/Gitashlok.jsx";
 
-const styles = {
-  color: "red",
-  fontSize: "10px",
-  marginTop: "360px",
-  marginLeft: "2px"
-};
 
 const Home = () => {
 
   return (
     <>
-    <Header/>
+      <Hero/>
+    <Navbar/>
+
 
     <HomeSearch/>
 
+
+    {/* Vidya Dadati Vinayam (Knowledge gives humility) - Chapter 4, Verse 39
+        Na Hi Jnanena Sadrisham (There is nothing equal to knowledge.) Chapter: 4 Verse: 39
+    */}
     <hr className='home-hr'/>
 
     <div className='div-featured'>
@@ -101,10 +103,12 @@ const Home = () => {
     </div>
 
     </div>
+      <div>
+        <Gitashlok/>
+      </div>
 
-    <h1 style={styles} > This is Home Page</h1>
-    <h1 style={styles} > This is Home Page</h1>
-    <h1 style={styles} > This is Home Page</h1>
+
+
     
 
     <Footer/>

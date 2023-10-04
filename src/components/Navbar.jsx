@@ -1,10 +1,9 @@
 import React, { useState, useEffect,useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../assets/styles/Header.css';
-import NavMenu from './NavMenu';
+import '../assets/styles/Navbar.css';
+import Navlink from './Navlink.jsx';
 
-const Header = () => {
-
+const Navbar = () => {
 
   // Nav Scroll 
   const [isNavHidden, setIsNavHidden] = useState(false);
@@ -63,34 +62,10 @@ const Header = () => {
       <div className="menu">
         
         {/* Links */}
-        <div className="menu-links">
+        <div id="menu-links">
 
-          <NavMenu/>
+          <Navlink/>
 
-{/*           
-          <NavLink style={({ isActive }) => {
-              return {
-                color: isActive ? "#0aa5ff" : "#999999",
-              };
-            }} to={`/`} >Home </NavLink>
-
-          <NavLink style={({ isActive }) => {
-              return {
-                color: isActive ? "#0aa5ff" : "#999999",
-                };
-              }} to={`/books`} >Books</NavLink>
-
-          <NavLink style={ ({ isActive }) => {
-              return {
-                color: isActive ? "#0aa5ff" : "#999999",
-              };
-            }} to={`/about`}  >About</NavLink>
-
-          <NavLink style={({ isActive }) => {
-              return {
-                color: isActive ? "#0aa5ff" : "#999999",
-              };
-            }} to={`/contact`} >Contact</NavLink> */}
         </div>
 
         {/* Login Button */}
@@ -112,7 +87,7 @@ const Header = () => {
         </button>
 
         <div className='dialog-menu'>
-          <NavMenu/>
+          <Navlink/>
         </div>
 
       </dialog>
@@ -121,4 +96,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar

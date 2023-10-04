@@ -1,0 +1,16 @@
+.shlok-div{
+    margin-top: 6vw;
+    height: 70vw;
+    margin-bottom: 0;
+}
+.shlok-img{
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+}
+
+@media (max-width: 600px) {
+
+    .shlok-div{
+        margin-top: 11vh;
+    }
+}

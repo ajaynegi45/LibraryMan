@@ -3,18 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 14vw;
+    margin-top: 3vw;
   }
   
   .left-side {
     flex: auto;
     text-align: left;
     margin-left: 2vw;
-    margin-top: 15vw;
+    /*margin-top: 15vw;*/
   }
   .left-side h1 {
     font-size: 4vw;
-    margin: 0px;
+    margin: 0;
     text-shadow: 0.1vw 0.2vw 0.2vw rgba(124, 120, 120, 0.4); 
   }
   .left-side p {
@@ -74,7 +74,7 @@
 
     .home-search {
       flex-direction: column-reverse;
-      margin-top: 17vh;
+      /*margin-top: 17vh;*/
     }
     .left-side {
       margin: 0px;

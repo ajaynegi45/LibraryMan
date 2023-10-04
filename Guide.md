@@ -14,7 +14,7 @@ my-library-website/
 │   ├── assets/
 │   │   └── images/
 │   ├── components/
-│   │   ├── Header.js
+│   │   ├── Navbar.js
 │   │   ├── Footer.js
 │   │   ├── HomePage.js
 │   │   ├── ContactPage.js
@@ -42,7 +42,7 @@ my-library-website/
 ```
 
 - `assets`: Store your images and other static assets here.
-- `components`: Create reusable components like Header, Footer, and individual page components.
+- `components`: Create reusable components like Navbar, Footer, and individual page components.
 - `pages`: Define your main application routes and layout.
 - `services`: Implement API service functions for making requests to your Spring backend.
 - `styles`: Store your CSS styles, and consider using a folder for themes if you plan to offer multiple themes.

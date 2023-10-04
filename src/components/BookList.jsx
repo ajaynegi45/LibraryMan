@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import {useGlobalContext} from "../Context.jsx";
 import '../assets/styles/BookList.css';
 import {Link} from "react-router-dom";
+import loadingGIF from "../assets/gif/output-onlinegiftools.gif"
+import bookCover from "../assets/images/BookCoverunavailable.jpg"
 
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
@@ -17,14 +19,19 @@ const BookList = () => {
             <p className={"booklist-status"}> {isLoading ? `Fetching Data for ${searchResult}...`:`${searchResult}`}</p>
 
             <div className={"bookList-container"}>
-                {
+
+                {isLoading ? ( <img className={"loading-gif"} src={loadingGIF} alt="Loading Gif" /> ):
                     books.map((currentBook) => {
                         return (
                             <section className={"book-card"} key={currentBook.id}>
 
                                 <div className={"book-card-img-container"}>
                                     <img
-                                        src={`https://covers.openlibrary.org/b/id/${currentBook.cover_id}-M.jpg`}
+                                        src={
+                                            currentBook.cover_id
+                                                ? `https://covers.openlibrary.org/b/id/${currentBook.cover_id}-M.jpg`
+                                                : bookCover
+                                        }
                                         alt={'Image is not Available'} />
                                 </div>
 
@@ -41,9 +48,15 @@ const BookList = () => {
                                     <p>Pages:
                                         <span> {currentBook.pages}</span>
                                     </p>
-                                    <Link to={`https://openlibrary.org/${currentBook.id}`}>
-                                        {currentBook.available?"Book Available":"Book Not Available"}
+
+                                    {/*<Link className={"read-link"} to={`https://openlibrary.org/${currentBook.id}  `}>*/}
+                                    {/*    {currentBook.available?"Read":"Not Available"}*/}
+                                    {/*</Link>*/}
+
+                                    <Link className={"read-link"} to={currentBook.read_link && currentBook.read_link.length > 0 ? `https://archive.org/details/${currentBook.read_link[0]}/2up?view=theater` : "#"}>
+                                        {currentBook.available ? "Read" : "Not Available"}
                                     </Link>
+
                                 </div>
                             </section>
                         )
