@@ -177,11 +177,15 @@ const Gitashlok = () => {
 
 
                 <Accordion.Item eventKey="18">
-                    <Accordion.Header>{verse.venkat.author}</Accordion.Header>
-                    <Accordion.Body>
-                        {verse.venkat?.sc}
-                    </Accordion.Body>
-                </Accordion.Item>
+                     <Accordion.Header>{verse.venkat.author}</Accordion.Header>
+                         <Accordion.Body style={{
+                          overflow: 'hidden',
+                          whiteSpace: 'normal',
+                          wordBreak: 'break-all',
+                       }}>
+                         {verse.venkat?.sc}
+                         </Accordion.Body>
+                     </Accordion.Item>
 
 
                 <Accordion.Item eventKey="19">
