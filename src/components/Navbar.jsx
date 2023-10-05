@@ -17,28 +17,7 @@ const Navbar = () => {
   //menu-icon
 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      let currScrollPos = window.scrollY;
-      let screen_width=screen.width;
-      /*console.log(screen_width);*/
-      if(screen_width<960){
-        setIsNavHidden(false);
-      }
-      else if (currScrollPos > prevScrollPos ) {
-        setIsNavHidden(true);
-      } else {
-        setIsNavHidden(false);
-      }
-      prevScrollPos = currScrollPos;
-    };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  },[]);
 
   const navbarStyle = {
     transform: isNavHidden ? 'translateY(-105%)' : 'translateY(0%)',
@@ -75,7 +54,7 @@ const Navbar = () => {
       <div className={click ? "menu active" : "menu"}>
         
         {/* Links */}
-        <div class={click ? "menu-links active" : "menu-links"}>
+        <div className={click ? "menu-links active" : "menu-links"}>
 
           <Navlink/>
 
