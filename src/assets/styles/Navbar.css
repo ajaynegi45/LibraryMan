@@ -157,11 +157,11 @@ dialog::backdrop{
     display: none;
   }
 
-  .menu-links{
+  .menu-links {
     margin-top: 10px;
   }
 
   .menu-btn {
     display: block;
   }
-}}
+}
