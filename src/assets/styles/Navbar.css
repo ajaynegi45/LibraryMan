@@ -17,12 +17,6 @@ body {
   font-family: "inter", sans-serif;
 }
 
-a,
-button {
-  all: unset;
-  cursor: pointer;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -170,4 +164,4 @@ dialog::backdrop{
   .menu-btn {
     display: block;
   }
-}
+}}
