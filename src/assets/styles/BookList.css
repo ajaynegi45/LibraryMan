@@ -1,212 +1,106 @@
-
-.booklist-status{
-    font-size: 1.5rem;
-    margin: 20px 0;
-    text-align: center;
-    color: red;
+.booklist-status {
+	font-size: 1.5rem;
+	margin: 20px 0;
+	text-align: center;
+	color: #4a5568;
+	font-weight: 600;
 }
 
 /* Container for book cards */
 .bookList-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 /* Individual book card */
 .book-card {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 10px;
-    width: 200px;
-    height: 100%;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Hide overflowing content */
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	margin: 20px 10px;
+	width: 250px;
+	height: 56vh;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden; /* Hide overflowing content */
 }
 
 /* Image container within the book card */
 .book-card-img-container {
-    margin: 7px 7px 0 7px;
-    overflow: hidden; /* Hide overflowing image */
+	margin: 7px 7px 0 7px;
+	overflow: hidden; /* Hide overflowing image */
 }
 
 /* Image within the image container */
 .book-card-img-container img {
-    width: 100%;
-    height: 250px;
-    transition: 0.5s ;
+	width: 100%;
+	height: 250px;
+	transition: 0.5s;
 }
 .book-card-img-container img:hover {
-    scale: 1.2;
+	scale: 1.2;
 }
 
 /* Information container within the book card */
 .book-card-information {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-    text-align: left;
-    color: black;
-    padding: 10px;
-    background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	min-width: 100%;
+	text-align: left;
+	color: black;
+	padding: 10px;
+	background-color: whitesmoke;
 }
 
 /* Title */
 .book-card-information h2 {
-    font-size: 0.9rem;
-    margin: 0;
+	font-size: 1rem;
+	margin: 0;
+	font-weight: 700;
+	color: #4a5568;
 }
 
 /* Author and other details */
 .book-card-information p {
-    font-size: 0.7rem;
-    margin: 0.3rem 0;
+	font-size: 0.7rem;
+	margin: 0.3rem 0;
+	color: #4a5568;
+	font-weight: 600;
 }
-.book-card-information p span{
-    color: #999999;
-}
-
-
-.loading-gif{
-    width: 50px;
-    margin-top: 10px;
-    margin-bottom: 50vh;
+.book-card-information p span {
+	color: #999999;
+	font-weight: 100;
 }
 
-.read-link{
-    font-size: 0.9rem;
-    text-align: center;
-    border: 2px solid black;
-    margin-top: 5px;
-    padding: 7px 2px;
-    background-color: #0aa5ff;
-    color: #f2f2f7;
+.loading-gif {
+	width: 50px;
+	margin-top: 10px;
+	margin-bottom: 50vh;
 }
 
-.read-link:hover{
-    color: red;
+.read-link {
+	font-size: 0.9rem;
+	text-align: center;
+	border: 2px solid black;
+	margin-top: 5px;
+	padding: 7px 2px;
+	color: #f2f2f7;
+	border-color: #3498db;
+	color: #fff;
+	box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+	transition: all 150ms ease-in-out;
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 450px) {
-
-    /* Individual book card */
-    .book-card {
-        width: 40vw;
-    }
-
-    /* Image container within the book card */
-    .book-card-img-container {
-        margin: 7px 7px 0 7px;
-        overflow: hidden; /* Hide overflowing image */
-    }
-
-    /* Image within the image container */
-    .book-card-img-container img {
-        width: 100%;
-        height: 45vw;
-        transition: 0.5s ;
-    }
-    .book-card-img-container img:hover {
-        scale: 1.2;
-    }
-
-    /* Information container within the book card */
-    .book-card-information {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-
-        text-align: left;
-        color: black;
-        padding: 10px;
-        background-color: whitesmoke;
-    }
-
-    /* Title */
-    .book-card-information h2 {
-        font-size: 0.9rem;
-        margin: 0;
-    }
-
-    /* Author and other details */
-    .book-card-information p {
-        font-size: 0.7rem;
-        margin: 0.3rem 0;
-    }
-    .book-card-information p span{
-        color: #999999;
-    }
-
-
+.read-link:hover {
+	color: #000;
+	box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*!* Container for book cards *!*/
 /*.bookList-container {*/
