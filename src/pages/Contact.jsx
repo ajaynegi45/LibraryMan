@@ -5,6 +5,8 @@ import BookList from "../components/BookList.jsx";
 import img2 from "../assets/images/books.jpg"
 import '../assets/styles/Contact.css';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -17,8 +19,10 @@ const Contact = () => {
     console.log(import.meta.env.VITE_EMAIL_SERVICE_ID, `${import.meta.env.REACT_APP_EMAIL_TEMPLATE_ID}`, form.current, `${import.meta.env.REACT_APP_EMAIL_PUBLIC_KEY}`);
     emailjs.sendForm(`${import.meta.env.VITE_EMAIL_SERVICE_ID}`, `${import.meta.env.VITE_EMAIL_TEMPLATE_ID}`, form.current, `${import.meta.env.VITE_EMAIL_PUBLIC_KEY}`)
       .then((result) => {
-          console.log(result.text);
+          toast.success("Message sent");
+          console.log(result);
       }, (error) => {
+          toast.error("Message could not be sent");
           console.log(error.text);
       });
 
@@ -27,6 +31,7 @@ const Contact = () => {
 
   return (
     <>
+    <ToastContainer />
     <Navbar/>
       <section className='contact-wrapper'>
         <div>
