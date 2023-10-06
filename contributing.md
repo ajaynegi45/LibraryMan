@@ -59,12 +59,16 @@ git remote -v
 git pull upstream main
 ``` 
 ### Step 6. Create a New Branch
+
+```git checkout -b <your_branch_name>
 ```
-git checkout -b <your_branch_name>
-```
-## Making Changes
+## Step 7. Making Changes
 Perform your desired changes to the code base.
-### Step 7. Track Changes
+Test the changes you have made using 
+```npm run dev``` or ```npm run dev -- --host```.
+
+
+### Step 8. Track Changes
     ```
      # Track the changes
      git status
@@ -72,15 +76,15 @@ Perform your desired changes to the code base.
      # Add changes to Index
      git add . or git add <file_name>
      ```
-### Step 8. Commit Changes
+### Step 9. Commit Changes
     ```
     git commit -m "Write a meaningful but small commit message" 
     ```
-  ### Step 9. Push Changes
+### Step 10. Push Changes
 ```
 git push -u origin <your_branch_name>
 ```
-### 10. Compare and Create
+### 11. Compare and Create
 - Click on "Compare And Pull Requests" 🔄
 - Make sure your pull request adheres to our contribution guidelines. Pull requests that do not meet the guidelines may be closed or discarded ❌
 - Add an appropriate title and description to your pull request, explaining your changes with suitable explanations and screenshots 📝🖼️
