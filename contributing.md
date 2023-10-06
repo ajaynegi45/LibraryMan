@@ -28,6 +28,7 @@ If you're not sure what to work on, take a look at the project's issues and see 
 ## Getting started ✍🏻
 
 If you're new to open source and don't know where to start, don't worry! We've tried to make it as easy as possible to contribute to the project.
+
 **Prerequisites**
 -Node.js version v18.17.1
 
