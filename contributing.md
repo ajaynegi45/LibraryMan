@@ -37,15 +37,17 @@ There are some steps that you need to follow before making any contribution in t
  [Fork](https://github.com/ajaynegi45/Library.git) the repo first
 
 ### Step 2. Clone the forked Repository 
-    ```
-    git clone https://github.com/<your_github_username>/Library.git
-    ```
+```
+git clone https://github.com/<your_github_username>/Library.git
+ ```
+ 
 ### Step 3. Set Up Remotes 
 - Add a reference (remote) to the original repository:
-    ```
-    git remote add upstream https://github.com/ajaynegi45/Library.git
-    ``` 
-    - Add a reference (remote) to your forked repository:
+```
+git remote add upstream https://github.com/ajaynegi45/Library.git
+``` 
+
+- Add a reference (remote) to your forked repository:
 ```
 git remote add origin https://github.com/<your_user_name>/Library.git
 ```
@@ -69,17 +71,18 @@ Test the changes you have made using
 
 
 ### Step 8. Track Changes
-    ```
-     # Track the changes
-     git status
+```
+# Track the changes
+git status
 
-     # Add changes to Index
-     git add . or git add <file_name>
-     ```
+# Add changes to Index
+git add . or git add <file_name>
+```
+
 ### Step 9. Commit Changes
-    ```
-    git commit -m "Write a meaningful but small commit message" 
-    ```
+```
+git commit -m "Write a meaningful but small commit message" 
+```
 ### Step 10. Push Changes
 ```
 git push -u origin <your_branch_name>
