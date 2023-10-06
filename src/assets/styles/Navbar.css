@@ -27,20 +27,28 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 100%;
   width: 100%;
-  height: 78px;
+  height: 90px;
   /*background-color: hsl(0, 0%, 12%);*/
   /*box-shadow: 0 3px 20px 2px rgba(0,0,0,0.1);
   background-color: white;*/
 
   /*glassmorphism*/
-  
+  /*
   background: rgba( 255, 255, 255, 0.33 );
 box-shadow:  0 3px 20px 2px rgba(0,0,0,0.1);
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 3px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
+*/
+/* Background with transparency */
+background-color: rgba(251, 251, 253, 0.8); /* last value is for transparency */
+
+-webkit-backdrop-filter: saturate(180%) blur(20px);
+
+backdrop-filter: saturate(180%) blur(20px);
+
+box-shadow:  0 3px 20px 2px rgba(0,0,0,0.1);
 
 
 /*black*/
@@ -190,7 +198,9 @@ dialog::backdrop{
   align-items: center;
   justify-content: flex-start;
   position: absolute;
+  /*
   right: -100%;
+  */
   background-color: grey;
   background: rgba(242, 242, 242, 0.95);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -198,17 +208,16 @@ backdrop-filter: blur( 20px );
 -webkit-backdrop-filter: blur( 20px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding: 6rem 1rem;
-  top: 0%;
+  top: -150vh;
   transition: 0.25s linear;
   margin-right: 0;
-  min-height: 80vh;
-  width: 60%;
-  border-bottom-left-radius: 20px;
+  min-height: 100vh;
+  width: 100%;
 }
 .menu.active{
   right: 0%;
   top: 0%;
-  transition: 0.25s linear;
+  transition: 0.3s linear;
 }
 .menu-links{
   display: flex;
@@ -233,26 +242,47 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px){
   .navbar{
-    height: 60px;
+    height: 72px;
     padding: 20px 10px;
   }
   .navbar .logo img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
-  /*
-  .menu {
-    display: none;
+  .navbar .logo a{
+    font-size: 32px;
   }
+}
 
-  .menu-links{
-    margin-top: 10px;
+@media (max-width: 768px) {
+  .navbar{
+    height: 69px;
+    padding: 20px 10px;
   }
+  .navbar .logo img{
+    width: 55px;
+    height: 55px;
+  }
+  .navbar .logo a{
+    font-size: 32px;
+  }
+}
 
-  .menu-btn {
-    display: block;
+@media screen and (max-width: 480px){
+  .navbar{
+    height: 55px;
+    padding: 20px 0px;
   }
-  */
+  .navbar .logo img{
+    width: 43px;
+    height: 43px;
+  }
+  .navbar .logo a{
+    font-size: 23px;
+  }
+  .menu-icon{
+    transform: scale(1.3);
+  }
 }
