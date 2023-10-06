@@ -31,14 +31,61 @@ If you're new to open source and don't know where to start, don't worry! We've t
 **Prerequisites**
 -Node.js version v18.17.1
 
-**Here are some steps you can follow:**
-- Fork the project to your own GitHub account.
-- Clone the forked project to your local machine.
-- Run ```npm install``` command
-- Make changes to the code or documentation.
-- Test the changes you have made using ```npm run dev``` or ```npm run dev -- --host```.
-- Commit your changes and push them to your forked repository.
-- Submit a pull request to the main project repository.
+There are some steps that you need to follow before making any contribution in this project, the following steps are important to get start.
+
+### Step 1. Fork the Repository
+ [Fork](https://github.com/ajaynegi45/Library.git) the repo first
+
+### Step 2. Clone the forked Repository 
+    ```
+    git clone https://github.com/<your_github_username>/Library.git
+    ```
+### Step 3. Set Up Remotes 
+- Add a reference (remote) to the original repository:
+    ```
+    git remote add upstream https://github.com/ajaynegi45/Library.git
+    ``` 
+    - Add a reference (remote) to your forked repository:
+```
+git remote add origin https://github.com/<your_user_name>/Library.git
+```
+
+### Step 4. Check Remotes
+```
+git remote -v
+```
+### Step 5. Keep Your Local Copy Updated
+```
+git pull upstream main
+``` 
+### Step 6. Create a New Branch
+```
+git checkout -b <your_branch_name>
+```
+## Making Changes
+Perform your desired changes to the code base.
+### Step 7. Track Changes
+    ```
+     # Track the changes
+     git status
+
+     # Add changes to Index
+     git add . or git add <file_name>
+     ```
+### Step 8. Commit Changes
+    ```
+    git commit -m "Write a meaningful but small commit message" 
+    ```
+  ### Step 9. Push Changes
+```
+git push -u origin <your_branch_name>
+```
+### 10. Compare and Create
+- Click on "Compare And Pull Requests" 🔄
+- Make sure your pull request adheres to our contribution guidelines. Pull requests that do not meet the guidelines may be closed or discarded ❌
+- Add an appropriate title and description to your pull request, explaining your changes with suitable explanations and screenshots 📝🖼️
+- Click on "Create Pull Request" to submit your contribution for review ✅  
+
   
 ## Code of Conduct 📃
 
