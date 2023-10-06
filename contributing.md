@@ -60,7 +60,8 @@ git pull upstream main
 ``` 
 ### Step 6. Create a New Branch
 
-```git checkout -b <your_branch_name>
+```
+git checkout -b <your_branch_name>
 ```
 ## Step 7. Making Changes
 Perform your desired changes to the code base.
