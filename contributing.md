@@ -42,6 +42,7 @@ git clone https://github.com/<your_github_username>/Library.git
  ```
  
 ### Step 3. Set Up Remotes 
+
 - Add a reference (remote) to the original repository:
 ```
 git remote add upstream https://github.com/ajaynegi45/Library.git
