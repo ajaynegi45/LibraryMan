@@ -59,7 +59,6 @@ git remote -v
 git pull upstream main
 ``` 
 ### Step 6. Create a New Branch
-
 ```
 git checkout -b <your_branch_name>
 ```
