@@ -9,23 +9,15 @@ const Navbar = () => {
   const [isNavHidden, setIsNavHidden] = useState(false);
   let prevScrollPos = window.scrollY;
 
-  useEffect(() => {
-    const handleScroll = () => {
-      let currScrollPos = window.scrollY;
-      if (currScrollPos > prevScrollPos) {
-        setIsNavHidden(true);
-      } else {
-        setIsNavHidden(false);
-      }
-      prevScrollPos = currScrollPos;
-    };
+  const [click,setClick] = useState(false);
+  const handleClick = () =>{
+    setClick(!click);
+  };
 
-    window.addEventListener("scroll", handleScroll);
+  //menu-icon
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  },[]);
+
+
 
   const navbarStyle = {
     transform: isNavHidden ? 'translateY(-105%)' : 'translateY(0%)',
@@ -54,15 +46,15 @@ const Navbar = () => {
     
     {/* Title */}
     <div className="logo">
-      <img width="100" height="100" src="https://img.icons8.com/plasticine/100/literature.png" alt="literature"/>
+      <img width="80" height="80" src="https://img.icons8.com/plasticine/100/literature.png" alt="literature"/>
       <NavLink to={`/`}>Library</NavLink>
     </div>
 
     {/* Nav Menu */}
-      <div className="menu">
+      <div className={click ? "menu active" : "menu"}>
         
         {/* Links */}
-        <div id="menu-links">
+        <div className={click ? "menu-links active" : "menu-links"}>
 
           <Navlink/>
 
@@ -73,9 +65,16 @@ const Navbar = () => {
       </div>
    
     {/* Side Button */}
+    { /*
       <div className="menu-btn">
-        <i className="fa-solid fa-bars" onClick={showMenu}></i>
-      </div>
+      <i className="fa-solid fa-bars" onClick={showMenu}></i>
+    </div>
+    */
+    }
+    <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          </div>
+      
     </nav>
 
 
