@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-
+body::-webkit-scrollbar{
+  display: none;
+}
 .home-hr{
   margin-top: 10vw;
   width: 50%;

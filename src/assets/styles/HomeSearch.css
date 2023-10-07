@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3vw;
+    margin-top: 15vw;
   }
   
   .left-side {
@@ -15,7 +15,7 @@
   .left-side h1 {
     font-size: 4vw;
     margin: 0;
-    text-shadow: 0.1vw 0.2vw 0.2vw rgba(124, 120, 120, 0.4); 
+    text-shadow: 0.1vw 0.2vw 0.2vw rgba(124, 120, 120, 0.4);
   }
   .left-side p {
     color: #777;
@@ -37,7 +37,7 @@
     border-radius: 10px;
     border: 2px solid #0aa5ff;
     align-content: center;
-    text-shadow: 0px 0.1vw 0.1vw rgba(124, 120, 120, 0.4); 
+    /*text-shadow: 0px 0.1vw 0.1vw rgba(124, 120, 120, 0.4); */
   }
   .search-btn:hover{
     background-color: #0aa5ff;
@@ -74,7 +74,7 @@
 
     .home-search {
       flex-direction: column-reverse;
-      /*margin-top: 17vh;*/
+      margin-top: 20vw;
     }
     .left-side {
       margin: 0px;
