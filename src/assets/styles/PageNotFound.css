@@ -1,11 +1,11 @@
-.pagenotfound-container {
+#pagenotfound-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.pagenotfound-btn {
+#pagenotfound-btn {
   color: white;
   font-weight: 600;
   background-color: black;
@@ -15,7 +15,7 @@
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.pagenotfound-btn:hover {
+#pagenotfound-btn:hover {
   color: black;
   background-color: white;
   border: 1px solid black;

@@ -6,7 +6,7 @@ function PageNotFound() {
   return (
     <main>
       <Navbar />
-      <div className="pagenotfound-container">
+      <div id="pagenotfound-container">
         <img
           width="100"
           height="100"
@@ -16,7 +16,7 @@ function PageNotFound() {
         <h1>Error 404 : Page Not Found</h1>
         <h3>Oops! This was not supposed to happen</h3>
         <a href="/">
-          <button className="pagenotfound-btn">Go Back</button>
+          <button id="pagenotfound-btn">Go Back</button>
         </a>
       </div>
     </main>
