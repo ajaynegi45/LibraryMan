@@ -100,7 +100,7 @@ textarea:focus {
     }
     .contact-card {
         flex-direction: row; 
-        margin: 0 2% 10vh 2%;
+        margin: 2.5rem 2% 10vh 2%;
         border-radius: 20px;
         box-shadow: 8px 8px 5px #9999;
     }
@@ -120,19 +120,13 @@ textarea:focus {
         margin-bottom: 0;
     }
     .contact-card {
-        margin: 0 10% 10vh 10%;
+        margin: 2.5rem 10% 10vh 10%;
     }
     .form-headline {
         font-size: 45px;
     }
     .contact-img {
         border-radius: 0 20px 20px 0;
-    }
-  }
-
-  @media only screen and (min-height: 950px) {
-    .contact-wrapper {
-        margin-top: 0;
     }
   }
 
