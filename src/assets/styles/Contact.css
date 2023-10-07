@@ -7,16 +7,13 @@
 .contact-card {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
     justify-content: center;
-    box-shadow: 8px 8px 5px #9999;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .form {
     background-color: white;
     padding: 10%;
-    border-radius: 20px;
     width: 100%;
 }
 
@@ -93,6 +90,7 @@ textarea:focus {
 @media only screen and (min-width: 700px) {
     .contact-wrapper {
         margin-top: 6vw;
+        min-height: 100vh;
     }
 
     .contact-img {
@@ -102,7 +100,9 @@ textarea:focus {
     }
     .contact-card {
         flex-direction: row; 
-        margin: 0 2% 5vh 2%;
+        margin: 0 2% 10vh 2%;
+        border-radius: 20px;
+        box-shadow: 8px 8px 5px #9999;
     }
 
     .form {
@@ -120,7 +120,7 @@ textarea:focus {
         margin-bottom: 0;
     }
     .contact-card {
-        margin: 0 10% 5vh 10%;
+        margin: 0 10% 10vh 10%;
     }
     .form-headline {
         font-size: 45px;
