@@ -5,9 +5,6 @@ import {Link} from "react-router-dom";
 import loadingGIF from "../assets/gif/output-onlinegiftools.gif"
 import bookCover from "../assets/images/BookCoverunavailable.jpg"
 
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
-
 const BookList = () => {
 
     const {books, searchResult, isLoading} = useGlobalContext();
