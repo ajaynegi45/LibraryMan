@@ -33,7 +33,7 @@ const Contact = () => {
     <>
     <ToastContainer />
     <Navbar/>
-      <section className='contact-wrapper'>
+      <div className='contact-wrapper'>
         <div className='contact-card'>
         <div className='form'>
           <h2 className='form-headline'>Contact Us</h2>
@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
           <img className="contact-img" src={img2} alt='Picture of some books'/>
         </div>
-      </section>
+      </div>
     <Footer/>
     </>
   )
