@@ -1,13 +1,26 @@
+# Introduction and Purpose
 
-# Contributing ❤️
+Welcome to the Contributing Guide for the Library Project!
 
-Hello there 👋🏻, and welcome to my Library Project!
+I'm Ajay Negi, and I'm excited to have the opportunity to share my creative work and professional experiences with you. The Library Project is an open-source endeavor designed to create a platform for accessing a vast collection of books obtained from the Open Library API. We greatly value your interest in contributing to this project, and we enthusiastically encourage contributions from individuals of all experience levels.
 
-My name is Ajay Negi, and I'm thrilled to share my creative work and professional experiences with you.
+## About the Library Project
 
-This is an open source project that allows people to know about my Library Project.
+The Library project is a free-to-use platform designed to provide a vast collection of books from the Open Library API to users worldwide. Our mission is to create an inclusive space where individuals can explore a diverse range of literary works, foster intellectual growth, and promote spiritual well-being through the daily Geeta shlok.
 
-We appreciate your interest in contributing to the project and we welcome contributions from everyone, regardless of your experience level.
+## Purpose of Contribution
+
+At the heart of this project lies the belief in the power of open collaboration and the idea that knowledge should be freely accessible to all. By contributing to the Library project, you become a part of a community-driven effort to empower individuals with knowledge and spiritual enrichment. Here's why your contributions matter:
+
+1. **Expand the Library**: Your contributions can help expand the Library's collection of books, making it an even more valuable resource for readers around the world. Whether it's adding new titles, authors, or genres, your input can diversify the offerings and cater to a broader audience.
+
+2. **Enhance User Experience**: We aim to provide an intuitive and user-friendly interface for our platform. Your contributions can improve the website's usability, enhance search functionality, and ensure a seamless reading experience for all users.
+
+3. **Promote Spiritual Well-Being**: The daily Geeta shlok is an integral part of our platform, contributing to users' spiritual enrichment. Your involvement can help curate and deliver these verses effectively, providing users with a daily dose of wisdom and tranquility.
+
+4. **Support Open Source**: The Library project is open source, which means anyone can contribute. By participating, you not only help make knowledge accessible but also foster the spirit of open collaboration and community-driven development.
+
+5. **Make a Positive Impact**: Your contributions can have a meaningful impact on individuals' lives by facilitating access to knowledge and promoting personal growth. Whether it's a small bug fix or a significant feature addition, every contribution counts.
 
 ## How to contribute 👀
 
@@ -35,44 +48,55 @@ If you're new to open source and don't know where to start, don't worry! We've t
 There are some steps that you need to follow before making any contribution in this project, the following steps are important to get start.
 
 ### Step 1. Fork the Repository
- [Fork](https://github.com/ajaynegi45/Library.git) the repo first
 
-### Step 2. Clone the forked Repository 
+[Fork](https://github.com/ajaynegi45/Library.git) the repo first
+
+### Step 2. Clone the forked Repository
+
 ```
 git clone https://github.com/<your_github_username>/Library.git
- ```
- 
-### Step 3. Set Up Remotes 
+```
+
+### Step 3. Set Up Remotes
 
 - Add a reference (remote) to the original repository:
+
 ```
 git remote add upstream https://github.com/ajaynegi45/Library.git
-``` 
+```
 
 - Add a reference (remote) to your forked repository:
+
 ```
 git remote add origin https://github.com/<your_user_name>/Library.git
 ```
 
 ### Step 4. Check Remotes
+
 ```
 git remote -v
 ```
+
 ### Step 5. Keep Your Local Copy Updated
+
 ```
 git pull upstream main
-``` 
+```
+
 ### Step 6. Create a New Branch
+
 ```
 git checkout -b <your_branch_name>
 ```
-## Step 7. Making Changes
-Perform your desired changes to the code base.
-Test the changes you have made using 
-```npm run dev``` or ```npm run dev -- --host```.
 
+## Step 7. Making Changes
+
+Perform your desired changes to the code base.
+Test the changes you have made using
+`npm run dev` or `npm run dev -- --host`.
 
 ### Step 8. Track Changes
+
 ```
 # Track the changes
 git status
@@ -82,29 +106,36 @@ git add . or git add <file_name>
 ```
 
 ### Step 9. Commit Changes
+
 ```
-git commit -m "Write a meaningful but small commit message" 
+git commit -m "Write a meaningful but small commit message"
 ```
+
 ### Step 10. Push Changes
+
 ```
 git push -u origin <your_branch_name>
 ```
+
 ### 11. Compare and Create
+
 - Click on "Compare And Pull Requests" 🔄
 - Make sure your pull request adheres to our contribution guidelines. Pull requests that do not meet the guidelines may be closed or discarded ❌
 - Add an appropriate title and description to your pull request, explaining your changes with suitable explanations and screenshots 📝🖼️
-- Click on "Create Pull Request" to submit your contribution for review ✅  
+- Click on "Create Pull Request" to submit your contribution for review ✅
 
-  
 ## Code of Conduct 📃
 
-We want everyone who contributes to the project to feel welcome and respected. 
+We want everyone who contributes to the project to feel welcome and respected.
 
 Therefore, please read our code of conduct in the file [`code_of_conduct.md`](https://github.com/ajaynegi45/Library/blob/main/code_of_conduct.md) to understand the standards of behavior we expect from everyone involved in the project.
+
 ## Feedback and Support 🎗️
 
-We're always happy to hear from our contributors and users. 
+We're always happy to hear from our contributors and users.
 
 If you have feedback or suggestions for how we can improve the project, please let us know. You can reach out to us on the project's issue tracker or through [email](mailto:contact@ajaynegi.co).
+
 ## Thankyou ❤️
+
 Thank you for your interest in my Library Project! ❤️
