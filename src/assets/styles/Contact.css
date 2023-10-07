@@ -9,10 +9,11 @@
     flex-direction: column;
     border-radius: 20px;
     justify-content: center;
+    box-shadow: 8px 8px 5px #9999;
 }
 
 .form {
-    background-color: #f2f2f7;
+    background-color: white;
     padding: 10%;
     border-radius: 20px;
     width: 100%;
@@ -93,16 +94,14 @@ textarea:focus {
         margin-top: 6vw;
     }
 
-    .form {
-        background-color: white;
-    }
-
     .contact-img {
         display: block;
         width: 50%;
+        border-radius: 0 20px 20px 0;
     }
     .contact-card {
         flex-direction: row; 
+        margin: 0 2%;
     }
 
     .form {

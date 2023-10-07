@@ -39,16 +39,16 @@ const Contact = () => {
           <h2 className='form-headline'>Contact Us</h2>
           <form className='form-wrapper' ref={form} onSubmit={sendEmail}>
           <label htmlFor="user_name" className="label">Full Name:</label>
-            <input className="input" type='text' name='user_name' required/>
+            <input className="input" type='text' name='user_name' placeholder='Full Name' required/>
 
             <label htmlFor="user_email" className="label">Email:</label>
-            <input className="input" type='email' name='user_email' required/>
+            <input className="input" type='email' name='user_email' placeholder='Email' required/>
 
             <label htmlFor="user_subject" className="label">Subject:</label>
-            <input className="input" type='text' name='user_subject' required/>
+            <input className="input" type='text' name='user_subject' placeholder='Subject' required/>
 
             <label htmlFor="message" className="label">Message:</label>
-            <textarea name='message' cols="30" rows="10"></textarea>
+            <textarea name='message' cols="30" rows="10" placeholder='Message'></textarea>
 
             <button className="submit-btn" type='submit'>Send Message</button>
           </form>
