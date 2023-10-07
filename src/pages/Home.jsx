@@ -13,16 +13,13 @@ const Home = () => {
 
   return (
     <>
-      <Hero/>
     <Navbar/>
-
-
     <HomeSearch/>
-
 
     {/* Vidya Dadati Vinayam (Knowledge gives humility) - Chapter 4, Verse 39
         Na Hi Jnanena Sadrisham (There is nothing equal to knowledge.) Chapter: 4 Verse: 39
     */}
+
     <hr className='home-hr'/>
 
     <div className='div-featured'>
@@ -31,89 +28,78 @@ const Home = () => {
 
     <div className='card-container'>
 
-    <div className="card">
-      <div className="img-box">
-        <img src={Money} alt="" />
+      <div className="card">
+        <div className="img-box">
+          <img src={Money} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>The Psychology of Money</h2>
+          <span>Morgan Housel</span>
+        </div>
       </div>
 
-      <div className="text-box">
-        <h2>The Psychology of Money</h2>
-        <span>Morgan Housel</span>
+
+      <div className="card">
+        <div className="img-box">
+          <img src={Money} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>The Psychology of Money</h2>
+          <span>Morgan Housel</span>
+        </div>
       </div>
+
+
+      <div className="card">
+        <div className="img-box">
+          <img src={Money} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>The Psychology of Money</h2>
+          <span>Morgan Housel</span>
+        </div>
+      </div>
+
+
+      <div className="card">
+        <div className="img-box">
+          <img src={Money} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>The Psychology of Money</h2>
+          <span>Morgan Housel</span>
+        </div>
+      </div>
+
+
+      <div className="card">
+        <div className="img-box">
+          <img src={Money} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>The Psychology of Money</h2>
+          <span>Morgan Housel</span>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="img-box">
+          <img src={Money} alt="" />
+        </div>
+        <div className="text-box">
+          <h2>The Psychology of Money</h2>
+          <span>Morgan Housel</span>
+        </div>
+      </div>
+
     </div>
 
-
-    <div className="card">
-      <div className="img-box">
-        <img src={Money} alt="" />
-      </div>
-
-      <div className="text-box">
-        <h2>The Psychology of Money</h2>
-        <span>Morgan Housel</span>
-      </div>
+    <div>
+      <Hero/>
+      <Gitashlok/>
     </div>
-
-
-    <div className="card">
-      <div className="img-box">
-        <img src={Money} alt="" />
-      </div>
-
-      <div className="text-box">
-        <h2>The Psychology of Money</h2>
-        <span>Morgan Housel</span>
-      </div>
-    </div>
-
-
-    <div className="card">
-      <div className="img-box">
-        <img src={Money} alt="" />
-      </div>
-
-      <div className="text-box">
-        <h2>The Psychology of Money</h2>
-        <span>Morgan Housel</span>
-      </div>
-    </div>
-
-
-    <div className="card">
-      <div className="img-box">
-        <img src={Money} alt="" />
-      </div>
-
-      <div className="text-box">
-        <h2>The Psychology of Money</h2>
-        <span>Morgan Housel</span>
-      </div>
-    </div>
-
-
-    <div className="card">
-      <div className="img-box">
-        <img src={Money} alt="" />
-      </div>
-
-      <div className="text-box">
-        <h2>The Psychology of Money</h2>
-        <span>Morgan Housel</span>
-      </div>
-    </div>
-
-    </div>
-      <div>
-        <Gitashlok/>
-      </div>
-
-
-
-    
 
     <Footer/>
-
-
     </>
   )
 }

@@ -7,6 +7,8 @@ import '../assets/styles/Contact.css';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Temporary from "../components/Temporary.jsx";
+
 
 const Contact = () => {
 
@@ -56,6 +58,7 @@ const Contact = () => {
           <img className="contact-img" src={img2} alt='Picture of some books'/>
         </div>
       </div>
+      <Temporary/>
     <Footer/>
     </>
   )

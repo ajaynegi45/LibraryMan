@@ -4,55 +4,66 @@
     color: red;
 }
 
-
 #shlok-information{
     margin: 10px;
     text-align: center;
+    overflow: auto;
 }
 
 #shlok-information > p > span{
     margin-left: 20px;
     color: red;
 }
+
+#shlok-information h5{
+    color: grey;
+    margin-bottom: 0;
+}
+
+
+
 .accordion-button:focus{
     box-shadow: none;
 }
 
-.accordion{
+#accordion-list{
+    margin-bottom: 50px;
+}
+.accordion-card{
     margin: 10px;
 }
-/* Custom CSS for the Accordion component */
-/* You can place this CSS in a separate .css file or add it inline in your component */
-
-/* Style the Accordion.Header */
-.accordion-header {
+.accordion-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #007bff; /* Change the background color */
     color: #fff; /* Change the text color */
-    padding: 10px; /* Add padding to the header */
+    padding: 8px; /* Add padding to the header */
     cursor: pointer; /* Add pointer cursor to indicate it's clickable */
     border: 1px solid #007bff; /* Add a border */
-
     border-radius: 5px 5px 0px 0; /* Add rounded corners */
 }
+.accordion-header-container:hover{
+    background-color: #0056b3;
+}
 
-/* Style the Accordion.Body */
+.accordion-header-container > h2{
+    font-size: 1.3rem;
+    margin: 0;
+}
+.accordion-header-container > button{
+    margin-right: 1vw;
+    box-shadow: none;
+}
 .accordion-body {
-    margin-top: -20px;
+    /*margin-top: -20px;*/
     background-color: #fff5e0; /* Change the background color */
     padding: 10px; /* Add padding to the body */
     border: 1px solid #ced4da; /* Add a border */
     border-top: none; /* Remove top border */
     border-radius: 0 0 5px 5px; /* Add rounded corners to the bottom */
-}
 
-/* Style the active Accordion.Header */
-.accordion-item.active .accordion-header {
-    background-color: #0056b3; /* Change the background color for active header */
-    color: #fff; /* Change the text color for active header */
-    border: 1px solid #0056b3; /* Change the border color for active header */
-}
-
-
-#toggle-button{
-
+    overflow: hidden;
+    /*display: none;*/
 }
