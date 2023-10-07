@@ -1,8 +1,16 @@
-.contact-wrapper{
+.contact-card {
     display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 0;
+}
+
+.form {
+    background-color: white;
+    padding: 10%;
+    border-radius: 20px;
+    width: 100%;
 }
 
 .form-wrapper {
@@ -10,49 +18,99 @@
     flex-direction: column;
 }
 
-.submit-btn {
-    font-weight: 500;
-    padding: 12px 22px;
-    background-color: #0aa5ff;
-    color: rgb(53, 53, 53);
-    border-radius: 10px;
-    border: 2px solid #0d7ab9;
-    transition: 0.2s;
-}
-.submit-btn:hover {
-    background-color: #0d7ab9;
-    color: white;
+.form-headline {
+    color: #595959;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    font-size: 30px;
 }
 
-.input {
-    width: 100%;
-    padding: 12px 20px;
+.label {
+    color: #595959;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.submit-btn {
+    height: 43.5;
+    font-weight: 500;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+  
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.input{
+    font-size: 16px;
+    padding: 6px 10px;
+    height: 43.5px;
     margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px solid #0aa5ff;
+    border: 1px solid #595959;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+  }
+.input:focus{
+    outline: none;
+    border: 1px solid #0aa5ff;
 }
 
 textarea {
     width: 100%;
-    padding: 12px 20px;
+    padding: 6px 10px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid #0aa5ff;
+    border: 1px solid #595959;
     border-radius: 5px;
     margin-bottom: 1.5rem;
+    font-family: "inter", sans-serif;;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #0aa5ff;
 }
 
 .contact-img {
     display: none;
+    object-fit: cover;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 700px) {
     .contact-img {
         display: block;
-        width: 40%;
-        border-radius: 10%;
+        width: 50%;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .contact-card {
+        flex-direction: row; 
+        margin: 0 5%;
+        box-shadow: 8px 8px 5px #9999;
+    }
+
+    .form {
+        border-radius: 20px 0 0 20px; 
+        padding: 3% 10% 3% 10%; 
+        width: 50%;
+    }
+
+    .form-headline {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .contact-card {
+        margin: 0 20%;
+    }
+    .form-headline {
+        font-size: 45px;
     }
   }
 

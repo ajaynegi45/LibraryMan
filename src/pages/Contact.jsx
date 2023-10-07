@@ -34,25 +34,27 @@ const Contact = () => {
     <ToastContainer />
     <Navbar/>
       <section className='contact-wrapper'>
-        <div>
+        <div className='contact-card'>
+        <div className='form'>
           <h2 className='form-headline'>Contact Us</h2>
           <form className='form-wrapper' ref={form} onSubmit={sendEmail}>
-          <label htmlFor="user_name" className="label-name">Full Name:</label>
+          <label htmlFor="user_name" className="label">Full Name:</label>
             <input className="input" type='text' name='user_name' required/>
 
-            <label htmlFor="user_email" className="label-name">Email:</label>
+            <label htmlFor="user_email" className="label">Email:</label>
             <input className="input" type='email' name='user_email' required/>
 
-            <label htmlFor="user_subject" className="label-name">Subject:</label>
+            <label htmlFor="user_subject" className="label">Subject:</label>
             <input className="input" type='text' name='user_subject' required/>
 
-            <label htmlFor="message" className="label-name">Message:</label>
+            <label htmlFor="message" className="label">Message:</label>
             <textarea name='message' cols="30" rows="10"></textarea>
 
             <button className="submit-btn" type='submit'>Send Message</button>
           </form>
         </div>
           <img className="contact-img" src={img2} alt='Picture of some books'/>
+        </div>
       </section>
     <Footer/>
     </>
