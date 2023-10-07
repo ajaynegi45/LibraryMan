@@ -10,6 +10,7 @@
     border-radius: 20px;
     justify-content: center;
     box-shadow: 8px 8px 5px #9999;
+    margin-bottom: 5vh;
 }
 
 .form {
@@ -101,7 +102,7 @@ textarea:focus {
     }
     .contact-card {
         flex-direction: row; 
-        margin: 0 2%;
+        margin: 0 2% 5vh 2%;
     }
 
     .form {
@@ -119,7 +120,7 @@ textarea:focus {
         margin-bottom: 0;
     }
     .contact-card {
-        margin: 0 10%;
+        margin: 0 10% 5vh 10%;
     }
     .form-headline {
         font-size: 45px;
