@@ -26,7 +26,7 @@ const Footer = () => {
 
             <div className="input-container">
 
-              <input type="email" placeholder="Email" id="email" required
+              <input type="email" className='email-input' placeholder="Email" id="email" required
                 onChange={
                   (e) => { emailChange(e) }
                 }/>

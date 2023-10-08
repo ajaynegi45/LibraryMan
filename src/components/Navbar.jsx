@@ -61,7 +61,8 @@ const Navbar = () => {
         </div>
 
         {/* Login Button */}
-        <button className="log-in">Log In</button>
+        <NavLink to={`/login`} ><button className="log-in">Log In</button></NavLink>
+        
       </div>
    
     {/* Side Button */}
