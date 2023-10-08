@@ -8,22 +8,23 @@ const About = () => {
       <Navbar />
       <div className="about-container">
         <div style={{ marginTop: "120px" }}></div>
-        <h1>About The Library</h1>
+        <h1 className="about-title">About The Library</h1>
 
         <section className="overview-section">
-          <h2>Overview</h2>
+          <h2>Overview 🦉</h2>
           <p>
-            Welcome to The Library, your gateway to a world of knowledge and
-            spiritual enrichment. This open-source project is dedicated to
-            providing a platform for reading an extensive collection of books
-            sourced from the Open Library API. In addition to this literary
-            treasure trove, we bring you daily Geeta shlok (verses) to nurture
-            your spiritual well-being and enhance the quality of your life.
+            Welcome to The Library, where the journey of discovery meets the
+            serenity of wisdom. Immerse yourself in a world of knowledge
+            carefully curated from diverse sources, including the vast Open
+            Library API. Beyond an extensive collection of books, we invite you
+            to experience a daily ritual of spiritual reflection through the
+            timeless Geeta shlok. The Library is more than a platform; it&apos;s
+            a sanctuary for your mind and soul.
           </p>
         </section>
 
         <section className="features-section">
-          <h2>Features</h2>
+          <h2>Features 🚀</h2>
           <ul>
             <li>Access to a vast library of books.</li>
             <li>User-friendly and intuitive interface.</li>
@@ -35,7 +36,7 @@ const About = () => {
         </section>
 
         <section className="usage-section">
-          <h2>Usage</h2>
+          <h2>Usage 📚</h2>
           <p>
             Once you&apos;ve opened The Library Website, you can immediately
             begin your literary journey. Utilize the search options to discover
@@ -45,7 +46,7 @@ const About = () => {
         </section>
 
         <section className="geeta-section">
-          <h2>Daily Geeta Shlok</h2>
+          <h2>Daily Geeta Shlok 🙏</h2>
           <p>
             We believe in the transformative power of daily contemplation on
             Geeta shlok. This practice can bring several benefits to your life:
@@ -71,22 +72,31 @@ const About = () => {
               <strong>Stress Reduction:</strong> Experience stress reduction and
               improved mental well-being.
             </li>
+            <li>
+              <strong>Personalized Recommendations:</strong> Discover books
+              tailored to your interests with our advanced recommendation
+              system.
+            </li>
+            <li>
+              <strong>Interactive Community:</strong> Connect with fellow
+              readers, share your favorite books, and engage in
+              thought-provoking discussions in our vibrant community forum.
+            </li>
           </ul>
         </section>
 
         <section className="contributing-section">
           <h2>Contributing 🤗</h2>
           <p>
-            Feel free to explore and use our project. If you encounter issues or
-            have suggestions, contribute to its development or reach out for
-            assistance. Contributions are always welcome! ✨
+            The Library is a community-driven project, and your contribution can
+            shape its future. Dive into the codebase, suggest new features, or
+            lend a helping hand to fellow contributors. Your ideas matter, and
+            together, we can build a reading haven for everyone! ✨
           </p>
           <p>
-            <a href="link-to-contributing.md">Learn more about contributing</a>
-          </p>
-          <p>
-            (Please adhere to our project&apos;s{" "}
-            <a href="link-to-code_of_conduct.md">code of conduct</a>.)
+            <a href="https://github.com/ajaynegi45/Library#contributing-">
+              Learn more about contributing...
+            </a>
           </p>
         </section>
 
@@ -98,7 +108,7 @@ const About = () => {
           </p>
           <p>
             <strong>Email:</strong>{" "}
-            <a href="mailto:your.email@example.com">Contact Me</a>
+            <a href="mailto:contact@ajaynegi.co">Contact Me</a>
           </p>
         </section>
 
