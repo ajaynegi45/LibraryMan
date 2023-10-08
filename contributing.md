@@ -98,9 +98,11 @@ git push -u origin <your_branch_name>
   
 ## Code of Conduct 📃
 
-We want everyone who contributes to the project to feel welcome and respected. 
+This open-source project aims at providing a platform for reading a vast collection of books.Thus, we want all the contributors to be highly respectful and committed to your contributions.
 
 Therefore, please read our code of conduct in the file [`code_of_conduct.md`](https://github.com/ajaynegi45/Library/blob/main/code_of_conduct.md) to understand the standards of behavior we expect from everyone involved in the project.
+
+Any violation against the Code of Conduct will Strictly not be tolerated and action will be taken.
 ## Feedback and Support 🎗️
 
 We're always happy to hear from our contributors and users. 
