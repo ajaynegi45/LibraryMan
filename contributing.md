@@ -126,9 +126,6 @@ git push -u origin <your_branch_name>
 
 ## Code of Conduct 📃
 
-We want everyone who contributes to the project to feel welcome and respected.
-
-Therefore, please read our code of conduct in the file [`code_of_conduct.md`](https://github.com/ajaynegi45/Library/blob/main/code_of_conduct.md) to understand the standards of behavior we expect from everyone involved in the project.
 
 ## Feedback and Support 🎗️
 
