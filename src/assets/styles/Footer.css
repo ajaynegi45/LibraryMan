@@ -30,7 +30,7 @@
     border: 0px;
     border-radius: 5px;
     padding-left: 10px;
-
+    background-color: whitesmoke;
     margin-right: 20px;
   }
   .input-container input:focus{
@@ -41,6 +41,7 @@
 
   .custom-button {
     height: 43.5;
+    width: 80px;
     font-weight: 500;
     background-color: #007bff;
     color: white;

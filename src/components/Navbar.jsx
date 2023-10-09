@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
 
           {/* Login Button */}
-          <button className="log-in">Log In</button>
+          <NavLink to={`/login`} ><button className="log-in">Log In</button></NavLink>
         </div>
 
       <div className="menu-icon" onClick={handleClick}>
