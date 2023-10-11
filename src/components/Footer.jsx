@@ -1,17 +1,68 @@
-import React, { useEffect, useState } from 'react';
-import '../assets/styles/Footer.css';
+import React, { useEffect, useState } from "react";
+import "../assets/styles/Footer.css";
 
 const Footer = () => {
-
-  const[email, setEmail] = useState();
-  const emailChange= (event) => {
+  const [email, setEmail] = useState();
+  const emailChange = (event) => {
     setEmail(event.target.value);
-  }
+  };
 
   return (
     <>
+      <footer>
+        <div class="social">
+          <p>Follow me on social media</p>
+          <ul class="wrapper">
+            <a href="#" target="_blank">
+              <li class="icon linkedin">
+                <span class="tooltip">LinkedIn</span>
+                <span>
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </li>
+            </a>
+            <a href="#" target="_blank">
+              <li class="icon github">
+                <span class="tooltip">GitHub</span>
+                <span>
+                  <i class="fab fa-github"></i>
+                </span>
+              </li>
+            </a>
+            <a href="#" target="_blank">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span>
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+              </li>
+            </a>
+            <a href="#" target="_blank">
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span>
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </li>
+            </a>
+            <a href="#" target="_blank">
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span>
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="final_text"></div>
+        <p>
+          Copyright &copy; All rights reserved
+          <br></br>Designed by Ajax Negi, 2023
+        </p>
+      </footer>
 
-      <footer className="footer">
+      {/* <footer className="footer">
 
         <div className='newsletter-container'>
           <form >
@@ -44,19 +95,9 @@ const Footer = () => {
         </div>
 
       </footer>
+ */}
 
-
-
-
-
-
-
-
-
-
-
-
-{/* 
+      {/* 
 
       <footer className='custom-footer'>
       <div className='container custom-container'>
@@ -91,11 +132,8 @@ const Footer = () => {
         </a>
       </div>
     </footer> */}
-
-
     </>
-  )
-}
-  
-export default Footer
+  );
+};
 
+export default Footer;
