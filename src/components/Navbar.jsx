@@ -1,5 +1,5 @@
 import React, { useState, useEffect,useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../assets/styles/Navbar.css';
 import Navlink from './Navlink.jsx';
 
@@ -15,6 +15,7 @@ const Navbar = () => {
     transform: isNavHidden ? 'translateY(-105%)' : 'translateY(0%)',
   };
 
+  const navigate=useNavigate();
 
   return (
     <>
@@ -34,6 +35,11 @@ const Navbar = () => {
             <Navlink/>
           </div>
 
+          {/* sign up Button*/}
+          <button className="sign-up" onClick={()=>{
+            navigate('/signup')
+          }}>Sign Up</button>
+          
           {/* Login Button */}
           <button className="log-in">Log In</button>
         </div>

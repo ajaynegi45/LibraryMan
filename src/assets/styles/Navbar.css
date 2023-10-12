@@ -107,8 +107,7 @@ box-shadow:  0 3px 20px 2px rgba(0,0,0,0.1);
 .menu-links .active{
   color: #0aa5ff;
 }
-
-.log-in {
+.log-in,.sign-up {
   font-weight: 500;
   padding: 12px 22px;
   background-color: transparent;
@@ -117,7 +116,7 @@ box-shadow:  0 3px 20px 2px rgba(0,0,0,0.1);
   border: 2px solid #0aa5ff;
   transition: 0.2s;
 }
-.log-in:hover {
+.log-in:hover,.sign-up:hover {
   background-color: #0aa5ff;
   color: white;
 }
