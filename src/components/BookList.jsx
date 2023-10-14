@@ -70,7 +70,7 @@ const BookList = () => {
 											{currentBook.language
 												? currentBook.language.join(
 														", "
-												  )
+												)
 												: "N/A"}
 										</span>
 									</p>
