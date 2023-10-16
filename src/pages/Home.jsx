@@ -4,8 +4,6 @@ import Footer from '../components/Footer';
 import Money from '../assets/images/Money.jpg';
 import HomeSearch from '../components/HomeSearch';
 import '../assets/styles/Home.css';
-import ScrollToTopButton from '../components/ScrollToTopButton.jsx';
-
 
 import Hero from "../components/Hero.jsx";
 import Gitashlok from "../components/Gitashlok.jsx";
@@ -16,8 +14,6 @@ const Home = () => {
   return (
     <>
     <Navbar/>
-    <ScrollToTopButton />
-
     <HomeSearch/>
 
     {/* Vidya Dadati Vinayam (Knowledge gives humility) - Chapter 4, Verse 39
@@ -102,8 +98,8 @@ const Home = () => {
       <Hero/>
       <Gitashlok/>
     </div>
-    <Footer/>
 
+    <Footer/>
     </>
   )
 }
