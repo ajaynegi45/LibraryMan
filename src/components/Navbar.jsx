@@ -1,5 +1,5 @@
-import React, { useState, useEffect,useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import {Link, NavLink} from 'react-router-dom';
 import '../assets/styles/Navbar.css';
 import Navlink from './Navlink.jsx';
 
@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
 
           {/* Login Button */}
-          <button className="log-in">Log In</button>
+          <Link to={"/login"}><button className="log-in">Log In</button></Link>
         </div>
 
       <div className="menu-icon" onClick={handleClick}>
