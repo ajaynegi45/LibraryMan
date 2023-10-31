@@ -43,6 +43,15 @@
 
 
 
+#loading-singleBook-gif {
+    position: fixed;
+    top: 50%; /* Set it at 50% from the top of the viewport */
+    left: 50%; /* Set it at 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Center the element precisely */
+    width: 50px;
+}
+
+
 
 
 

@@ -46,19 +46,13 @@ const BookList = () => {
                                         <span> {currentBook.pages}</span>
                                     </p>
 
-                                    {/*<Link className={"read-link"} to={`https://openlibrary.org/${currentBook.id}  `}>*/}
-                                    {/*    {currentBook.available?"Read":"Not Available"}*/}
-                                    {/*</Link>*/}
-
-                                    {/*<Link className={"read-link"} to={currentBook.read_link && currentBook.read_link.length > 0 ? `https://archive.org/details/${currentBook.read_link[0]}/2up?view=theater` : "#"}>*/}
-                                    {/*    {currentBook.available ? "Read" : "Not Available"}*/}
-                                    {/*</Link>*/}
-
                                     <Link className={"read-link"}
-                                          to= { currentBook.read_link && currentBook.read_link.length > 0 ? `/book/${currentBook.id.replace("/works/", "")}/${currentBook.read_link[0]}`:"#"}>Read</Link>
-
-                                    {/*<Link className={"read-link"} to={`/book/${currentBook.id.replace("/works/", "")}`}>Read</Link>*/}
-
+                                          to= { currentBook.read_link && currentBook.read_link.length > 0 ?
+                                              `/book/${currentBook.id.replace("/works/", "")}/${currentBook.read_link[0]}`
+                                              :  "#"
+                                    }>
+                                        Read
+                                    </Link>
 
                                 </div>
                             </section>
