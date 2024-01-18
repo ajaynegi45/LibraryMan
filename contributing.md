@@ -139,12 +139,13 @@ git push -u origin <your_branch_name>
 
 ## Code of Conduct 📃
 
-PLease feel free to take yout time and read our [Code Of Conduct](https://github.com/ajaynegi45/Library/blob/main/contributing.md)
+Please feel free to take out time and read our [Code Of Conduct](https://github.com/ajaynegi45/Library/blob/main/contributing.md)
 
 ## Feedback and Support 🎗️
 
-We appreciate your feedback! Reach out through the project's issue tracker or
-If you have feedback or suggestions for how we can improve the project, please let us know. You can reach out to us on the project's issue tracker or through [email](mailto:contact@ajaynegi.co).
+We appreciate your feedback!
+
+If you have any suggestions for how we can improve the project, please let us know. You can reach out to us on the project's issue tracker or through [email](mailto:contact@ajaynegi.co).
 
 ## Thank you ❤️
 
