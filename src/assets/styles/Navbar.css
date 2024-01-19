@@ -12,7 +12,7 @@ body {
   /* background-color: .010101;  */
 
   /* white Background*/
-  background-color: #f2f2f7; 
+  background-color: #f2f2f7;
 
   font-family: "inter", sans-serif;
 }
@@ -90,7 +90,7 @@ box-shadow:  0 3px 20px 2px rgba(0,0,0,0.1);
 .menu-links {
   display: flex;
   gap: 24px;
-  border-right: 1px solid .999999;
+  border-right: 1px solid ;
   padding-inline: 24px;
 }
 
@@ -129,49 +129,49 @@ box-shadow:  0 3px 20px 2px rgba(0,0,0,0.1);
   cursor: pointer;
 }
 
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(169, 169, 169);
-}
+/*section {*/
+/*  height: 100vh;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  color: rgb(169, 169, 169);*/
+/*}*/
 
-section > h1 {
-  font-size: 4rem;
-  font-weight: 500;
-  text-align: center;
-  text-wrap: balance;
-}
+/*section > h1 {*/
+/*  font-size: 4rem;*/
+/*  font-weight: 500;*/
+/*  text-align: center;*/
+/*  text-wrap: balance;*/
+/*}*/
 
-dialog {
-  border: 3px solid black;
-  border-radius: 7px;
-  text-shadow: 0.0vh 0.3vh 0.3vh rgba(124, 120, 120, 0.4); 
-}
+/*dialog {*/
+/*  border: 3px solid black;*/
+/*  border-radius: 7px;*/
+/*  text-shadow: 0.0vh 0.3vh 0.3vh rgba(124, 120, 120, 0.4); */
+/*}*/
 
 
-.dialog-menu{
+/*.dialog-menu{*/
 
-  display: flex;
-  flex-direction: column;
-  padding: 3vw;
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  padding: 3vw;*/
 
-  font-size: 5vh;
-}
+/*  font-size: 5vh;*/
+/*}*/
 
-dialog::backdrop{
+/*dialog::backdrop{*/
 
-}
+/*}*/
 
-.close-button{
-  color: red;
-  border: 1.3px solid red;
+/*.close-button{*/
+/*  color: red;*/
+/*  border: 1.3px solid red;*/
 
-  border-radius: 50%;
+/*  border-radius: 50%;*/
 
-  padding: 3px 8px;
-}
+/*  padding: 3px 8px;*/
+/*}*/
 
 
 .menu-icon{

@@ -18,7 +18,6 @@ const AppProvider = ({children}) => {
     const [searchQuery, setSearchQuery] = useState("java");
     const [searchResult, setSearchResult] = useState("java");
 
-
     const [verse, setVerse] = useState(null);
     const [chapter, setChapter] = useState();
     const [slok, setSlok] = useState();
@@ -63,7 +62,7 @@ const AppProvider = ({children}) => {
                     setSearchResult(`Result for ${searchQuery} is Found`);
 
                     const newBooks = docs.map((bookSingle) => {
-                        const {key, author_name, cover_i, edition_count, first_publish_year, title, public_scan_b, language, number_of_pages_median,ia} = bookSingle;
+                        const {key, author_name, cover_i, edition_count, first_publish_year, title, public_scan_b, language, number_of_pages_median,ia,seed} = bookSingle;
                         return {
                             id: key,
                             author: author_name,
@@ -74,7 +73,8 @@ const AppProvider = ({children}) => {
                             available: public_scan_b,
                             language: language,
                             pages: number_of_pages_median,
-                            read_link:ia
+                            read_link:ia,
+                            seed:seed
                         }
                     });
                     setBooks(newBooks)

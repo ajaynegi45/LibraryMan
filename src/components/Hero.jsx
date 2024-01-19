@@ -6,9 +6,9 @@ const Hero = () => {
     const {chapter,slok} = useGlobalContext();
     return (
         <>
-            <div className={"shlok-div"} >
-                <img className={"shlok-img"}  src={`https://bhagavadgitaapi.in/slok/${chapter}/${slok}/gita.svg`} alt={"Geeta World"}/>
-            </div>
+            {/*<div className={"shlok-div"} >*/}
+            {/*    <img className={"shlok-img"}  src={`https://bhagavadgitaapi.in/slok/${chapter}/${slok}/gita.svg`} alt={"Geeta World"}/>*/}
+            {/*</div>*/}
         </>
     );
 };

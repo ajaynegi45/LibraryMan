@@ -48,7 +48,7 @@ const Contact = () => {
             <input id="user_subject" className="input" type='text' name='user_subject' placeholder='Subject' required/>
 
             <label htmlFor="message" className="label">Message:</label>
-            <textarea id="message" name='message' cols="30" rows="10" placeholder='Message'></textarea>
+            <textarea id="message" name='message' cols="30" rows="10" placeholder='Currently this service is not working...'></textarea>
 
             <button className="submit-btn" type='submit'>Send Message</button>
           </form>

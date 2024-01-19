@@ -41,7 +41,7 @@ const Books = () => {
                 <img src={LibraryBook} alt="" />
                 <input type="search" placeholder = "Search for books, authors..." name={"bookName"} autoCorrect={"on"} autoComplete={"on"}
                        onChange={ (e)=>{ setSearchValue(e)
-                       }}
+                       }} autoFocus={true}
                 />
             </div>
         </form>

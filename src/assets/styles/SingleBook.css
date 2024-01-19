@@ -1,0 +1,102 @@
+#single-book-section{
+    margin-top: 10vw;
+}
+
+#single-book-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#single-book-section > div > button {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#single-book-section > div > button:hover {
+    border: 1px solid #0aa5ff;
+    color: #0aa5ff;
+}
+
+#singlebook-details > #read-link-button{
+    font-size: 1rem;
+    padding: 10px 30px;
+    background-color: #0aa5ff;
+    color: #f2f2f7;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 10px 10px 10px 0;
+}
+#singlebook-details > #read-link-button:hover{
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: #0aa5ff;
+    outline: 1px solid #0aa5ff;
+}
+
+
+
+#loading-singleBook-gif {
+    position: fixed;
+    top: 50%; /* Set it at 50% from the top of the viewport */
+    left: 50%; /* Set it at 50% from the left of the viewport */
+    transform: translate(-50%, -50%); /* Center the element precisely */
+    width: 50px;
+}
+
+
+
+
+
+#singlebook-img-container{
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#singlebook-img-container > img{
+    width: 100%;
+    transition: 0.5s ;
+}
+
+#singlebook-img-container > img:hover {
+    scale: 1.2;
+}
+
+
+#singlebook-details{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+@media  (max-width: 700px) {
+
+    #single-book-section {
+        margin-top: 20vw;
+    }
+
+    #single-book-container{
+        flex-direction: column;
+    }
+
+    #singlebook-img-container > img{
+        height: 10%;
+    }
+
+    #singlebook-details > #read-link-button{
+        display: flex;
+        justify-content: center;
+    }
+}
