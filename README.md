@@ -98,6 +98,23 @@ This project wouldn't be possible without the contributions of our amazing commu
   <img src = "https://contrib.rocks/image?repo=ajaynegi45/Library"/>
 </a>
 
+<br/><br/><br/>
+
+### Stargazers
+
+<p align="center">
+  <i>If you like Library, please <a href="../../stargazers">★</a> star this repository to show your support! 🤩</i>
+ <br/>
+<!--   <a href="https://star-history.com/#ajaynegi45/Library&Date"> -->
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ajaynegi45/Library&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ajaynegi45/Library&type=Date" />
+      <img align="center" alt="Star History Chart" src="https://api.star-history.com/svg?repos=ajaynegi45/Library&type=Date" />
+    </picture>
+<!--   </a> -->
+</p>
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
