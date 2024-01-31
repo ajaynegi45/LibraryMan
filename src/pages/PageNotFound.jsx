@@ -12,6 +12,8 @@ function PageNotFound() {
           height="100"
           src="https://img.icons8.com/plasticine/100/literature.png"
           alt="literature"
+          loading='lazy'
+          decoding='async'
         />
         <h1>Error 404 : Page Not Found</h1>
         <h3>Oops! This was not supposed to happen</h3>

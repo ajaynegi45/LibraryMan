@@ -68,11 +68,11 @@ const SingleBook = () => {
 
                 {
                     isLoading ?
-                        <img id="loading-singleBook-gif" src={loadingGIF} alt="Loading..."/>
+                        <img id="loading-singleBook-gif" src={loadingGIF} alt="Loading..." loading='lazy' decoding='async' />
 
                     :   <div id="single-book-container">
                             <div id="singlebook-img-container">
-                                <img src={singleBook.coverImg} alt="Image is not available" />
+                                <img src={singleBook.coverImg} alt="Image is not available" loading='lazy' decoding='async' />
                             </div>
                             <div id="singlebook-details" >
                                 <h1>{singleBook.title}</h1>

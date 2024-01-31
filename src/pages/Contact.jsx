@@ -53,7 +53,7 @@ const Contact = () => {
             <button className="submit-btn" type='submit'>Send Message</button>
           </form>
         </div>
-          <img className="contact-img" src={img2} alt='Picture of some books'/>
+          <img className="contact-img" src={img2} alt='Picture of some books' loading='lazy' decoding='async'/>
         </div>
       </div>
     <Footer/>
