@@ -2,43 +2,44 @@
     margin-top: 10vw;
 }
 
+.back-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.back-container img{
+    width: 25px;
+    height: 25px;
+}
+
+.single-book-wrapper{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #single-book-container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
-#single-book-section > div > button {
-    margin-top: 10px;
-    margin-left: 20px;
-    padding: 10px 30px;
-    border: 1px solid black;
-    border-radius: 8px;
-}
 
 #single-book-section > div > button:hover {
-    border: 1px solid #0aa5ff;
-    color: #0aa5ff;
+    color: #504f4f;
 }
 
 #singlebook-details > #read-link-button{
     font-size: 1rem;
-    padding: 10px 30px;
-    background-color: #0aa5ff;
-    color: #f2f2f7;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    margin: 10px 10px 10px 0;
+    color: #0aa5ff;
 }
 #singlebook-details > #read-link-button:hover{
-    font-size: 0.9rem;
-    background-color: transparent;
-    color: #0aa5ff;
-    outline: 1px solid #0aa5ff;
+    color: #038ede;
 }
 
 
@@ -52,13 +53,22 @@
 }
 
 
-
-
-
 #singlebook-img-container{
     overflow: hidden;
     margin: 10px;
-    border-radius: 8px;
+    padding: 2px;
+    width: 220px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#singlebook-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#singlebook-img-container img{
+    border-radius: 5px;
 }
 
 #singlebook-img-container > img{
@@ -73,30 +83,39 @@
 
 #singlebook-details{
     margin-left: 10px;
+    border: 1px solid #bbbbbb;
+    padding: 70px;
+    border-radius: 8px;
+    width: 53rem;
+}
+
+#place-and-time{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+
+#place-and-time #vertical-line{
+    border-left: 1px solid;
+    height: 15px;
 }
 
 
 
-
-
-
-
 @media  (max-width: 700px) {
+    .single-book-wrapper{
+        height: 70rem;
+    }
 
     #single-book-section {
-        margin-top: 20vw;
+        margin-top: 5rem;
     }
 
     #single-book-container{
         flex-direction: column;
     }
 
-    #singlebook-img-container > img{
-        height: 10%;
-    }
-
-    #singlebook-details > #read-link-button{
-        display: flex;
-        justify-content: center;
+    #singlebook-details{
+        width: 25rem;
     }
 }

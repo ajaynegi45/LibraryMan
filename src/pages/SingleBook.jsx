@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar.jsx";
 import {Link, useNavigate, useParams} from "react-router-dom";
 import bookCover from "../assets/images/BookCoverunavailable.jpg";
 import { useGlobalContext } from "../Context.jsx";
 import "../assets/styles/SingleBook.css";
 import loadingGIF from "../assets/gif/output-onlinegiftools.gif"
+import backArrow from '../assets/images/left-chevron.png'
 
 const SingleBook = () => {
     const { id,readLink } = useParams();
@@ -61,32 +62,36 @@ const SingleBook = () => {
 
             <section id="single-book-section">
 
-                <div>
+                <div className="back-container">
+                    <img src={backArrow} alt="Image is not available" />
                     <button onClick={goBack}>Go Back</button>
                 </div>
+                <div className="single-book-wrapper">
 
+                    {
+                        isLoading ?
+                            <img id="loading-singleBook-gif" src={loadingGIF} alt="Loading..."/>
 
-                {
-                    isLoading ?
-                        <img id="loading-singleBook-gif" src={loadingGIF} alt="Loading..."/>
-
-                    :   <div id="single-book-container">
-                            <div id="singlebook-img-container">
-                                <img src={singleBook.coverImg} alt="Image is not available" />
+                        :   <div id="single-book-container">
+                                <div id="singlebook-img-container">
+                                    <img src={singleBook.coverImg} alt="Image is not available" />
+                                </div>
+                                <div id="singlebook-details" >
+                                    <div id="singlebook-title">{singleBook.title}</div>
+                                    <p>{singleBook.description}</p>
+                                    <div id="place-and-time">
+                                        <p>{singleBook.subject_places}</p>
+                                        <div id="vertical-line"></div> 
+                                        <p>{singleBook.subject_times}</p>
+                                    </div>
+                                    <p>{singleBook.subjects}</p>
+                                    <Link id={"read-link-button"} target='_blank' to={`https://archive.org/details/${readLink}/2up?view=theater`}>
+                                        read more...
+                                    </Link>
+                                </div>
                             </div>
-                            <div id="singlebook-details" >
-                                <h1>{singleBook.title}</h1>
-                                <p><b>Description:</b> {singleBook.description}</p>
-                                <p><b>Subject Places:</b> {singleBook.subject_places}</p>
-                                <p><b>Subject Times:</b> {singleBook.subject_times}</p>
-                                <p><b>Subjects:</b> {singleBook.subjects}</p>
-                                <Link id={"read-link-button"} to={`https://archive.org/details/${readLink}/2up?view=theater`}>
-                                    Read
-                                </Link>
-                            </div>
-                        </div>
-            }
-
+                }
+                </div>
             </section>
 
             <div>
