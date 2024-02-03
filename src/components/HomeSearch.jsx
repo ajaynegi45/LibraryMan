@@ -19,7 +19,7 @@ const HomeSearch = () => {
       </div>
 
       <div className="right-side">
-        <img src={blue} alt="" />
+        <img src={blue} alt="" loading='lazy' decoding='async' />
       </div>
 
     </div>

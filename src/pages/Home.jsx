@@ -12,7 +12,6 @@ import '../assets/styles/Home.css';
 import Hero from "../components/Hero.jsx";
 import Gitashlok from "../components/Gitashlok.jsx";
 
-
 const Home = () => {
 
   return (
@@ -34,7 +33,7 @@ const Home = () => {
 
       <div className="card">
         <div className="img-box">
-          <img src={Money} alt="" />
+          <img src={Money} alt="Money" loading='lazy' decoding='async'/>
         </div>
         <div className="text-box">
           <h2>The Psychology of Money</h2>
@@ -45,7 +44,7 @@ const Home = () => {
 
       <div className="card">
         <div className="img-box">
-          <img src={OOPS} alt="" />
+          <img src={OOPS} alt="OOPs" loading='lazy' decoding='async'/>
         </div>
         <div className="text-box">
           <h2>Object Oriented</h2>
@@ -56,7 +55,7 @@ const Home = () => {
 
       <div className="card">
         <div className="img-box">
-          <img src={Spring} alt="" />
+          <img src={Spring} alt="Spring book"  loading='lazy' decoding='async' />
         </div>
         <div className="text-box">
           <h2>Spring In Action</h2>
@@ -67,7 +66,7 @@ const Home = () => {
 
       <div className="card">
         <div className="img-box">
-          <img src={Programmer} alt="" />
+          <img src={Programmer} alt="Programmer Book" loading='lazy' decoding='async'  />
         </div>
         <div className="text-box">
           <h2>The Pragmatic Programmer</h2>
@@ -78,7 +77,7 @@ const Home = () => {
 
       <div className="card">
         <div className="img-box">
-          <img src={Refactor} alt="" />
+          <img src={Refactor} alt="Refactor Book" loading='lazy' decoding='async'  />
         </div>
         <div className="text-box">
           <h2>Refactoring</h2>

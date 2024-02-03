@@ -22,7 +22,7 @@ const Navbar = () => {
     
       {/* Title */}
       <div className="logo">
-        <img width="80" height="80" src="https://img.icons8.com/plasticine/100/literature.png" alt="literature"/>
+        <img width="80" height="80" src="https://img.icons8.com/plasticine/100/literature.png" alt="literature" loading='lazy' decoding='async' />
         <NavLink to={`/`}>Library</NavLink>
       </div>
 

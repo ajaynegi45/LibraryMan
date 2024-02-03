@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useGlobalContext} from "../Context.jsx";
 import '../assets/styles/BookList.css';
 import {Link} from "react-router-dom";
-import loadingGIF from "../assets/gif/output-onlinegiftools.gif"
+import loadingGIF from "/loading.gif"
 import bookCover from "../assets/images/BookCoverunavailable.jpg"
 
 const BookList = () => {
@@ -29,7 +29,7 @@ const BookList = () => {
                                                 ? `https://covers.openlibrary.org/b/id/${currentBook.cover_id}-M.jpg`
                                                 : bookCover
                                         }
-                                        alt={'Image is not Available'} />
+                                        alt={'Image is not Available'} loading='lazy' decoding='async' />
                                 </div>
 
                                 <div className={"book-card-information"}>

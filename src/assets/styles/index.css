@@ -10,6 +10,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.loading{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading > img {
+  width: 10vh;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
