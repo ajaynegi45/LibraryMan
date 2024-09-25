@@ -85,7 +85,7 @@ Please follow our [`code_of_conduct.md`](https://github.com/ajaynegi45/Library/b
 
 Questions or thoughts? Reach out!
 
-**Email:** [contact me](mailto:contact@ajaynegi.co) 📧
+ Share it via opening an [issue](https://github.com/ajaynegi45/LibraryMan/issues)
 
 
 Don't hesitate to reach out. You can either raise an issue in the repository or directly email me. Your feedback is valuable, and I welcome open discussions to improve the project.
