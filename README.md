@@ -54,7 +54,7 @@ Discover books tailored to your interests:
       - **Author:** Kathy Sierra
       - **Language:** English
       - **Pages:** 688
-      - [Read](https://ajaylibrary.netlify.app/book/OL5756124W/headfirstjava00sier)
+      - [Read](https://library-man.netlify.app/book/OL5756124W/headfirstjava00sier)
 
   2.  **Core Java: An Integrated Approach, New**
       - **Author:** DT Editorial Services R. Nageswara Rao
