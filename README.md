@@ -60,7 +60,7 @@ Discover books tailored to your interests:
       - **Author:** DT Editorial Services R. Nageswara Rao
       - **Language:** English
       - **Pages:** 720
-      - [Read](https://ajaylibrary.netlify.app/books)
+      - [Read](https://library-man.netlify.app/books)
 
 [Explore More Books](https://ajaylibrary.netlify.app/books)
 
