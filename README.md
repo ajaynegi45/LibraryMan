@@ -22,7 +22,7 @@ Dive into the Library, a digital sanctuary designed to democratize knowledge. Ou
 
 <br/>
 
-[Live Website Link](https://ajaylibrary.netlify.app)
+[Live Website Link](https://library-man.netlify.app/)
 
 ## Key Features
 
