@@ -34,9 +34,8 @@ If any contributor engages in behavior that violates this code of conduct, the p
 - Banning the individual from contributing to the project in the future.
 ## Reporting Incidents 📩
 
-If you witness or experience any behavior that violates this code of conduct, please report it immediately by contacting one of the project maintainers through [email](mailto:contact@ajaynegi.co) or on the project's issue tracker. All reports will be kept confidential and will be investigated promptly. 
+If you witness or experience any behavior that violates this code of conduct, please report it immediately by contacting one of the project maintainers through [email](mailto:codiescoder@gmail.com) or on the project's issue tracker. All reports will be kept confidential and will be investigated promptly. 
 
-**Email:** contact@ajaynegi.co
 ## Our Pledge 😌
 
 We are committed to creating and maintaining a welcoming and respectful community for all contributors, and to holding ourselves and others accountable to these standards of behavior. We invite all contributors to join us in creating a positive and inclusive environment for everyone.
