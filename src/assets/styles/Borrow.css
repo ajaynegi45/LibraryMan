@@ -1,0 +1,34 @@
+.borrowings-container {
+    padding: 20px;
+}
+
+.borrowings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.borrowing-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.return-button, .pay-fine-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-button:hover, .pay-fine-button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 0;
+}

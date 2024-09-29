@@ -1,0 +1,43 @@
+.borrowing-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative; /* Add this for positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Makes sure the card spans the height */
+}
+
+.borrow-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    position: absolute; /* Position buttons at the bottom */
+    bottom: 20px; /* Spacing from the bottom */
+    left: 20px; /* Spacing from the left */
+    width: calc(100% - 40px); /* Ensure it doesn't overflow */
+}
+
+.pay-fine-button, .return-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pay-fine-button:hover, .return-button:hover {
+    background-color: #0056b3;
+}
+
+.pay-fine-button {
+    background-color: #ff4757;
+}
+
+.pay-fine-button:hover {
+    background-color: #e84118;
+}
