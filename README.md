@@ -4,6 +4,9 @@
 
 Checkout [Backend](https://github.com/ajaynegi45/LibraryMan-API) Repository
 
+### Design Resources:
+- <a href="https://www.figma.com/design/kUaU4vgMuqVi2lDgWlsKhk/LibraryMan-UI?node-id=11-2&t=aD7uCyRzmhbGQsBv-1" target="_blank">Figma Design</a>
+
 ## Table of Contents
 
 - [Library 📚📖](#library-)
