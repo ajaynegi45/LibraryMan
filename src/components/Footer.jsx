@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/styles/Footer.css';
-
+import github from '../assets/svg/github.svg'
 const Footer = () => {
 
   const[email, setEmail] = useState();
@@ -40,7 +40,13 @@ const Footer = () => {
         <div className="container">
 
           <p>&copy; { new Date().getFullYear() } </p>
-          <p>Made with ❤️ by Ajay Negi</p>
+          <p>Made with ❤️ by Ajay Negi</p>  
+          <span>
+            <a href="https://github.com/ajaynegi45/LibraryMan" target='__blank'>
+              <img  className = "github" src={github} alt="github"/> 
+              </a>
+            </span>
+          
         </div>
 
       </footer>
