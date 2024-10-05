@@ -5,6 +5,7 @@ import "../assets/styles/Login.css"
 import google from "../assets/svg/google.svg"
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
+import LoginContent from '../components/LoginContent.jsx';
 
 const Login = () => {
     return (
@@ -65,7 +66,7 @@ const Login = () => {
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</section>*/}
-
+        <LoginContent/>
 
             <Footer/>
         </>

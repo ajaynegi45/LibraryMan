@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-container{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: e5e5e5;
+}
+
+.login-content{
+    margin-top: 50px;
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.left {
+    width: 70%;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.right{
+    margin-left: 2px;
+    width: 30%;
+    background: #FF416C;
+	/* background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C); */
+	/* background: -webkit-linear-gradient(to right, #4567b7, #6495ed);
+background: linear-gradient(to right, #4567b7, #6495ed); */
+/* background: -webkit-linear-gradient(to right, #34C759, #8BC34A);
+background: linear-gradient(to right, #34C759, #8BC34A); */
+background: -webkit-linear-gradient(to right, #A87EA9, #C9B3D6);
+background: linear-gradient(to right, #A87EA9, #C9B3D6);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 2%;
+}
+
+
+.left input {
+    padding-left: 5px;
+    background-color: #eee;
+    margin-top: 15px;
+    position: relative;
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10   px;
+    height: 40px;
+    width: 300px;       
+    border: 1px solid #d6d6e7;
+    border-radius: 3px;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    :focus {
+        border-color: #3c4fe0;
+        box-shadow: 0 2px 0 0 rgb(35 38 59 / 5%);
+    }
+}
+.left h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.left h2::after{
+    content: "";
+    border-bottom: 0.5px solid green;
+    display: block;
+    margin-top: 10px;
+    width: 125px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.left button{
+    padding: 12px 45px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 999px;
+    background-color: #C9B3D6;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+
+.right h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.right button{
+    padding: 5px;
+    margin-top: 20px;
+    align-self: center;
+    border: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 999px;
+    background: -webkit-linear-gradient(to right, #A87EA9, #C9B3D6);
+    background: linear-gradient(to right, #A87EA9, #C9B3D6);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 70px;
+}
+
+
+
