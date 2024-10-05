@@ -1,12 +1,32 @@
 import React, { useState } from 'react';
 import '../assets/styles/Footer.css';
+import Subscribe from './Subscribe';
 
 const Footer = () => {
 
-  const[email, setEmail] = useState();
+  const[email, setEmail] = useState('');
   const emailChange= (event) => {
     setEmail(event.target.value);
+    setErrorMessage('');
   }
+  const [showModal, setshowModal] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+  // Email validation function
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleSubscribe = (event) => {
+    event.preventDefault(); // Prevent form submission
+
+    if (validateEmail(email)) {
+      setshowModal(true); // Show modal if email is valid
+    } else {
+      setErrorMessage('Please enter a valid email address.');
+    }
+  };
 
   return (
     <>
@@ -14,7 +34,7 @@ const Footer = () => {
       <footer className="footer">
 
         <div className='newsletter-container'>
-          <form >
+          <form onSubmit={handleSubscribe}>
 
             <div className='newsletter-text'>
               <label htmlFor="email" >
@@ -26,12 +46,17 @@ const Footer = () => {
 
             <div className="input-container">
 
-              <input type="email" placeholder="Email" id="email" required
+              <input type="email" placeholder="Email" id="email" value={email} required
                 onChange={
                   (e) => { emailChange(e) }
                 }/>
                 
               <button type='submit' className='custom-button'>Subscribe</button>
+
+              {/* Display error message if email is invalid */}
+              {errorMessage && <p className="error-message">{errorMessage}</p>}
+               {/* Show subscription modal */}
+              {showModal && <Subscribe onClose={()=>setshowModal(false)}/>}
             </div>
 
           </form>
