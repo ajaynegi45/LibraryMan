@@ -18,8 +18,8 @@ const LoginContent = () => {
             <div className="left">
                 <h2>Login</h2>
                 <div className="icons"></div>
-                <input  onChange={handleChange}type="text" placeholder='Username/Email' />
-                <input onChange={handleChange} type="password" placeholder='Password' />
+                <input  onChange={handleChange}type="text" placeholder='Username/Email'  required={true} />
+                <input onChange={handleChange} type="password" placeholder='Password' required={true}/>
                 <button>Login</button>
             </div>    
             <div className="right">
