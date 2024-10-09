@@ -287,3 +287,76 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     transform: scale(1.3);
   }
 }
+
+.switch {
+  position: relative;
+  width: 3.5rem;
+  height: 2rem;
+  margin-top: 10px;
+  margin-right: 10%;
+}
+/* Styles for navlink element */
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10%;
+  padding: 10px 20px;
+  background-color: rgb(215, 215, 228);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navlink:hover {
+  background-color: rgb(226, 226, 238);
+}
+/* Styles for flex div element */
+.flexdiv {
+  display: flex;
+  justify-content: space-between;
+}
+/* Hide the switch input element */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* Styles for slider element */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(215, 215, 228);
+  transition: 0.4s;
+  border-radius: 30px;
+ 
+}
+/* Styles for slider handle */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 20px;
+  left: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+/* Styles for slider when switch is checked */
+input:checked + .slider {
+  background-color: #37393f;
+}
+/* Styles for slider handle when switch is checked */
+input:checked + .slider:before {
+  left: calc(100% - 1.7rem);
+  background: #37393f;
+  box-shadow: inset -4px -2px 4px -2px #8983f7, inset -10px -4px 0px 0px #a3dafb;
+}
+

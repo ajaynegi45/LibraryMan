@@ -3,11 +3,11 @@ import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer';
 import Temporary from "../components/Temporary.jsx";
 
-const About = () => {
+const About = ({mode,changeMode}) => {
   return (
     <>
-    <Navbar/>
-      <Temporary/>
+    <Navbar mode={mode} changeMode={changeMode}/>
+      <Temporary mode={mode} />
 
     <Footer/>
     </>

@@ -12,17 +12,17 @@ import '../assets/styles/Home.css';
 import Hero from "../components/Hero.jsx";
 import Gitashlok from "../components/Gitashlok.jsx";
 
-const Home = () => {
+const Home = ({mode,changeMode}) => {
 
   return (
     <>
-    <Navbar/>
-    <HomeSearch/>
+    <Navbar mode={mode} changeMode={changeMode}/>
+    <HomeSearch mode={mode}/>
 
     {/* Vidya Dadati Vinayam (Knowledge gives humility) - Chapter 4, Verse 39
         Na Hi Jnanena Sadrisham (There is nothing equal to knowledge.) Chapter: 4 Verse: 39
     */}
-
+     <div className='container' >
     <hr className='home-hr'/>
 
     <div className='div-featured'>
@@ -90,6 +90,7 @@ const Home = () => {
     <div>
       <Hero/>
       <Gitashlok/>
+    </div>
     </div>
 
     <Footer/>
