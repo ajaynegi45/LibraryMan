@@ -6,7 +6,7 @@ import '../assets/styles/Books.css';
 import BookList from "../components/BookList.jsx";
 import {useGlobalContext} from "../Context.jsx";
 
-const Books = () => {
+const Books = ({mode,changeMode}) => {
 
     const {setSearchQuery, setSearchResult, setIsLoading, searchQuery} = useGlobalContext();
     const [search,setSearch] = useState("");
@@ -34,7 +34,7 @@ const Books = () => {
 
   return (
     <>
-      <Navbar/>
+      <Navbar mode={mode} changeMode={changeMode}/>
 
         <form onSubmit={setSearchQueryValue}>
             <div className="searchBook-div">

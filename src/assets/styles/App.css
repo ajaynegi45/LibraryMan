@@ -1,4 +1,14 @@
+/* 
+.app-container.light {
+  background-color: white;
+  color: black;
+} */
 
+/* Dark mode styles */
+.app-container.dark {
+  background-color: #042743;
+  color: white;
+}
 
 /* #root {
   max-width: 1280px;

@@ -4,7 +4,7 @@ import '../assets/styles/Borrow.css';
 import { useEffect, useState } from "react";
 import Borrowings from "../components/Borrowings.jsx";
 
-const Borrow = () => {
+const Borrow = ({mode,changeMode}) => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const Borrow = () => {
 
     return (
         <>
-            <Navbar />
+            <Navbar mode={mode} changeMode={changeMode}/>
 
             <section className="borrow-container">
                 <h1>Borrow Books</h1>
