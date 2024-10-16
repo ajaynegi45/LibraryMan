@@ -129,6 +129,7 @@ const About = ({mode,changeMode}) => {
     contactItem: {
       fontSize: '1.1rem',
       marginBottom: '10px',
+      color:'black'
     },
     button: {
       backgroundColor: '#007bff',
