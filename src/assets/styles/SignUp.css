@@ -1,0 +1,134 @@
+.signup-container {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    justify-content: center;
+    background-color: inherit;
+}
+
+section {
+    max-width: 350px; 
+    max-height: 90vh; 
+    width: 130%; 
+    padding: 20px; 
+    background-color: inherit;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.2); 
+    overflow-y: auto; 
+    border: 1px solid rgba(128, 128, 128, 0.3); 
+}
+
+
+h1 {
+    font-size: 1.8rem; 
+    margin-bottom: 5px;
+    color: inherit;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    color: inherit;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+input:focus {
+    outline: none; 
+    border-color: #888; 
+}
+
+.offscreen {
+    display: none; 
+}
+
+.valid {
+    display: inline; 
+    color: green;
+}
+
+.invalid {
+    display: inline; 
+    color: red;
+}
+
+.instructions {
+    font-size: 0.9em; 
+    color: blue; 
+    display: none; 
+}
+
+input:focus + .instructions {
+    display: block; 
+}
+
+.createaccount {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 93%; 
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+.or {
+    margin: 20px 0;
+    font-size: 0.8rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+}
+
+.button-row button {
+    flex: 1;
+    background-color: #43a047;
+    color: white;
+    padding: 10px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
