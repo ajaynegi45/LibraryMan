@@ -101,12 +101,8 @@ const Login=({mode,changeMode})=>{
                         <button>LinkedIn</button>
                     </div>
                 </div>
-            </form>
-
-            <p>
-                Don't have an account?             
-                   <Link to="/signup" > Sign Up </Link>
-            </p>
+            </form>             
+               <Link to="/signup" > <p>Don't have an account? Sign Up </p></Link>
          </section>
         </div>
     );
