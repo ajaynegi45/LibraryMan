@@ -10,7 +10,7 @@ const Login = () => {
     return (
         <>
             <Navbar/>
-            {/*<section className="container">*/}
+            {/* <section className="container">*/}
 
             {/*    <div className="image-section">*/}
             {/*        <div className="image-wrapper">*/}
@@ -34,7 +34,7 @@ const Login = () => {
             {/*            <h2>Welcome Back! 👋🏻</h2>*/}
             {/*            <p>Enter your credentials to access your account.</p>*/}
 
-            {/*            <div className="input-container">*/}
+                       {/* <div className="input-container"> */}
             {/*                <div className="form-group">*/}
             {/*                    <label htmlFor="email">Email</label>*/}
             {/*                    <input type="email" id="email" autoComplete="off"/>*/}
@@ -64,7 +64,7 @@ const Login = () => {
             {/*            </button>*/}
             {/*        </div>*/}
             {/*    </div>*/}
-            {/*</section>*/}
+            {/*</section> */}
 
 
             <Footer/>
