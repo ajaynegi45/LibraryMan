@@ -12,6 +12,7 @@ const Login = ({mode,changeMode}) => {
             <Navbar mode={mode} changeMode={changeMode}/>
             {/*<section className="container">*/}
 
+
             {/*    <div className="image-section">*/}
             {/*        <div className="image-wrapper">*/}
             {/*            <img src={Gradient} alt=""/>*/}
@@ -34,7 +35,7 @@ const Login = ({mode,changeMode}) => {
             {/*            <h2>Welcome Back! 👋🏻</h2>*/}
             {/*            <p>Enter your credentials to access your account.</p>*/}
 
-            {/*            <div className="input-container">*/}
+                       {/* <div className="input-container"> */}
             {/*                <div className="form-group">*/}
             {/*                    <label htmlFor="email">Email</label>*/}
             {/*                    <input type="email" id="email" autoComplete="off"/>*/}
@@ -64,7 +65,7 @@ const Login = ({mode,changeMode}) => {
             {/*            </button>*/}
             {/*        </div>*/}
             {/*    </div>*/}
-            {/*</section>*/}
+            {/*</section> */}
 
 
             <Footer/>

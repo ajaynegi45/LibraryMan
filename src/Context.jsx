@@ -1,17 +1,9 @@
-import React, {useCallback, useContext, useEffect, useState} from "react";
-// context (warehouse)
-// Provider (Delivery Boy)
-// Consumer (useContext(you))
+import React, { useCallback, useContext, useEffect, useState } from "react";
+import { getBooks, getShlok } from "./services/apiServices"; // Import your backend API functions
 
-// Context (Warehouse) for managing application state
 const AppContext = React.createContext();
 
-// URL for Open Library API
-const URL = "https://openlibrary.org/search.json?title=";
-
-const AppProvider = ({children}) => {
-
-    // State variables for managing data and UI state
+const AppProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
     const [books, setBooks] = useState([]);
     const [error, setError] = useState(null);
@@ -29,71 +21,56 @@ const AppProvider = ({children}) => {
 
         setChapter(gitaChapter);
         setSlok(gitaSlok);
-        async function fetchData() {
+        
+        // Fetch verse from backend
+        async function fetchVerse() {
             try {
-                const response = await fetch(`https://bhagavadgitaapi.in/slok/${gitaChapter}/${gitaSlok}/`);
-                const data = await response.json();
+                const data = await getShlok(gitaChapter, gitaSlok);
                 setVerse(data);
-            } catch (e) {
+            } catch (error) {
                 setError({
                     message: "An error occurred while fetching Shlok data.",
-                    statusCode: 500, // You can set a proper status code
-                    type: "Try Catch Error"
+                    statusCode: 500,
+                    type: "Backend Error"
                 });
             }
         }
-        fetchData();
+        fetchVerse();
     }, []);
 
-
-    // Replacing spaces in searchQuery with '+' signs
-    let searchQueryValue = searchQuery.replace(/[ .]+/g, '+');
-
-    // Fetch data from Open Library Database
+    // Fetch books data from backend
     const fetchData = useCallback(
         async () => {
             setIsLoading(true);
             try {
-                const response = await fetch(`${URL}${searchQueryValue}`);
-                const data = await response.json();
-                const {docs} = data;
-
-                if(docs.length>0){
+                const data = await getBooks(searchQuery);
+                if (data && data.docs && data.docs.length > 0) {
                     setSearchResult(`Result for ${searchQuery} is Found`);
-
-                    const newBooks = docs.map((bookSingle) => {
-                        const {key, author_name, cover_i, edition_count, first_publish_year, title, public_scan_b, language, number_of_pages_median,ia,seed} = bookSingle;
+                    
+                    const newBooks = data.docs.map((bookSingle) => {
                         return {
-                            id: key,
-                            author: author_name,
-                            cover_id: cover_i,
-                            edition_count: edition_count,
-                            first_publish_year: first_publish_year,
-                            title: title,
-                            available: public_scan_b,
-                            language: language,
-                            pages: number_of_pages_median,
-                            read_link:ia,
-                            seed:seed
-                        }
+                            id: bookSingle.key,
+                            author: bookSingle.author_name || [],
+                            cover_id: bookSingle.cover_i,
+                            title: bookSingle.title,
+                            language: bookSingle.language || [],
+                            pages: bookSingle.number_of_pages_median,
+                            read_link: bookSingle.ia || [],
+                        };
                     });
-                    setBooks(newBooks)
-                } else{
+                    setBooks(newBooks);
+                } else {
                     setSearchResult(`Result for ${searchQuery} is not Found`);
-                    setError({
-                        message: `No results found for ${searchQuery}`,
-                        statusCode: response.status,
-                        type: response.type
-                    });
+                    setBooks([]); // Clear books if no results
                 }
-                setIsLoading(false);
-            } catch(e) {
-                console.error(e);
+            } catch (error) {
                 setError({
                     message: "An error occurred while fetching Book data.",
-                    statusCode: 500, // You can set a proper status code
-                    type: "Try Catch Error"
+                    statusCode: 500,
+                    type: "Backend Error"
                 });
+            } finally {
+                setIsLoading(false);
             }
         }, [searchQuery]
     );
@@ -103,17 +80,28 @@ const AppProvider = ({children}) => {
         setIsLoading(true);
     }, [searchQuery]);
 
-    return(
-        <AppContext.Provider value={{ chapter,slok,isLoading, setIsLoading, error, books, setSearchQuery, searchResult, setSearchResult, searchQuery, verse}} >
+    return (
+        <AppContext.Provider value={{
+            chapter,
+            slok,
+            isLoading,
+            setIsLoading,
+            error,
+            books,
+            setSearchQuery,
+            searchResult,
+            setSearchResult,
+            searchQuery,
+            verse
+        }}>
             {children}
         </AppContext.Provider>
     );
-
 };
 
 // Custom hook for accessing the AppContext
 const useGlobalContext = () => {
     return useContext(AppContext);
-}
+};
 
-export {AppContext, AppProvider, useGlobalContext};
+export { AppContext, AppProvider, useGlobalContext };

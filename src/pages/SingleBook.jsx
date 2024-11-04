@@ -5,27 +5,26 @@ import bookCover from "../assets/images/BookCoverunavailable.jpg";
 import { useGlobalContext } from "../Context.jsx";
 import "../assets/styles/SingleBook.css";
 import loadingGIF from "../assets/gif/output-onlinegiftools.gif"
+import { getSingleBook } from "../services/apiServices";
+
 
 const SingleBook = ({mode,changeMode}) => {
     const { id,readLink } = useParams();
     const navigate = useNavigate();
     const [singleBook, setSingleBook] = useState({});
-    const {isLoading, setIsLoading} = useGlobalContext();
+    const { isLoading, setIsLoading } = useGlobalContext();
 
-    const goBack = () => { navigate(-1); }
+    const goBack = () => { navigate(-1); };
 
     useEffect(() => {
-
         const fetchBookDetails = async () => {
             try {
                 setIsLoading(true);
 
-                const URL = `https://openlibrary.org/works/${id}.json`;
-                const response = await fetch(URL);
-                const data = await response.json();
+                // Call the API function with Axios
+                const data = await getSingleBook(id);
 
                 if (data) {
-
                     const {
                         description,
                         title,
@@ -36,7 +35,7 @@ const SingleBook = ({mode,changeMode}) => {
                     } = data;
 
                     const newBook = {
-                        description: description ? description.value : "No description found",
+                        description: description?.value || "No description found",
                         title: title,
                         coverImg: covers ? `https://covers.openlibrary.org/b/id/${covers[0]}-L.jpg` : bookCover,
                         subject_places: subject_places ? subject_places.join(", ") : "No subject places found",
@@ -45,15 +44,16 @@ const SingleBook = ({mode,changeMode}) => {
                     };
 
                     setSingleBook(newBook);
-                    setIsLoading(false)
                 }
+                setIsLoading(false);
             } catch (error) {
                 console.error(error);
+                setIsLoading(false);
             }
-        }
+        };
 
         fetchBookDetails();
-    }, [id]);
+    }, [id, setIsLoading]);
 
     return (
         <>

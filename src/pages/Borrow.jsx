@@ -3,6 +3,7 @@ import Footer from "../components/Footer.jsx";
 import '../assets/styles/Borrow.css';
 import { useEffect, useState } from "react";
 import Borrowings from "../components/Borrowings.jsx";
+import { getAllBooks } from "../services/apiServices";
 
 const Borrow = ({mode,changeMode}) => {
     const [books, setBooks] = useState([]);
@@ -14,12 +15,11 @@ const Borrow = ({mode,changeMode}) => {
 
     const fetchBookDetails = async () => {
         try {
-            const URL = `http://localhost:8080/api/books`;
-            const response = await fetch(URL);
-            const data = await response.json();
+            // Call the API function with Axios
+            const data = await getAllBooks();
             setBooks(data); // Set the book list in state
         } catch (error) {
-            console.error(error);
+            console.error("Error fetching books:", error);
         }
     };
 

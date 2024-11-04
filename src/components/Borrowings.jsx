@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../assets/styles/Borrowings.css';
+import { fetchAllBorrowings } from '../services/apiServices';
 
 const Borrowings = () => {
     const [borrowings, setBorrowings] = useState([]);
@@ -9,10 +10,7 @@ const Borrowings = () => {
     // Fetch borrowings data from API
     const fetchBorrowings = async () => {
         try {
-            const URL = `http://localhost:8080/api/borrowings`;
-            const response = await fetch(URL);
-            if (!response.ok) throw new Error('Failed to fetch borrowings'); // Handle non-200 responses
-            const data = await response.json();
+            const data = await fetchAllBorrowings();
             setBorrowings(data);
         } catch (error) {
             setError(error.message); // Set error message
