@@ -3,10 +3,10 @@ import '../assets/styles/HomeSearch.css';
 import blue from '../assets/svg/blue.svg';
 import { NavLink } from 'react-router-dom';
 
-const HomeSearch = () => {
+const HomeSearch = ({mode}) => {
   return (
     <>
-    <div className="home-search">
+    <div className="home-search" >
 
       <div className="left-side">
         <h1>Your Gateway to a Universe of Books</h1>
