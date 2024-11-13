@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Borrow from "./pages/Borrow.jsx";
 import { useState } from 'react';
 import './assets/styles/App.css';
+import OtpPage from './pages/OtpPage.jsx';
 const Home = lazy(() => import('./pages/Home'));
 const Books = lazy(() => import('./pages/Books'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -10,6 +11,7 @@ const About = lazy(() => import('./pages/About'));
 const PageNotFound = lazy(() => import('./pages/PageNotFound'));
 const SingleBook = lazy(() => import('./pages/SingleBook.jsx'));
 const Login = lazy(() => import('./pages/Login.jsx'));
+const SignUp = lazy(() => import('./pages/SignUp.jsx'));
 
 function App() {
 
@@ -38,6 +40,8 @@ function App() {
             <Route path="/about" element={<About mode={mode} changeMode={toggleMode}/>} />
             <Route path="/contact" element={<Contact mode={mode} changeMode={toggleMode}/>} />
             <Route path="/login" element={<Login mode={mode} changeMode={toggleMode}/>} />
+            <Route path="/signup" element={<SignUp mode={mode} changeMode={toggleMode}/>} />
+            <Route path="/otppage" element={<OtpPage mode={mode} changeMode={toggleMode}/>}></Route>
             <Route path="*" element={<PageNotFound mode={mode} changeMode={toggleMode}/>} />
           </Routes>
         </Suspense>
