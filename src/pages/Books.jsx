@@ -45,6 +45,14 @@ const Books = ({mode,changeMode}) => {
                 />
             </div>
         </form>
+        {/* Container for search status messages */}
+        <div className="search-status-container">
+            {isLoading ? (
+                <h2 className="status-text">Searching for "{search}"...</h2>
+            ) : (
+                <h2 className="status-text">{searchResult}</h2>
+            )}
+        </div>
 
         <BookList/>
       <Footer/>

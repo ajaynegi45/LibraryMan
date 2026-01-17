@@ -1,13 +1,19 @@
-/* 
-.app-container.light {
-  background-color: white;
-  color: black;
-} */
 
-/* Dark mode styles */
+.app-container.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
 .app-container.dark {
-  background-color: #042743;
-  color: white;
+  --bg-color: #042743;
+  --text-color: #ffffff;
+}
+
+.app-container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: all 0.3s ease;
 }
 
 

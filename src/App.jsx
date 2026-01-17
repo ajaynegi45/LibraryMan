@@ -17,15 +17,13 @@ function App() {
 
   const[mode,setMode]=useState('light');
 
-  const toggleMode=()=>{
-    if(mode==='light'){
-      setMode('dark');
-      document.body.style.backgroundColor='#042743';
-    }
-    else{
-      setMode('light');
-      document.body.style.backgroundColor = '#fff';
-    }
+  const toggleMode = () => {
+    setMode(prevMode => (prevMode === 'light' ? 'dark' : 'light'));
+  };
+    // else{
+    //   setMode('light');
+    //   document.body.style.backgroundColor = '#fff';
+    // }
   }
 
   return (
@@ -48,6 +46,6 @@ function App() {
         </div>
       </>
   );
-}
+
 
 export default App;
