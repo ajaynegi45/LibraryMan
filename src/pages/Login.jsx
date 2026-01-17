@@ -42,7 +42,7 @@ const Login=({mode,changeMode})=>{
     return (
         <div className='login-container'>
          <Navbar mode={mode} changeMode={changeMode}/>
-         <section className={`sectionclass {$mode}`}>
+         <section className={`sectionclass ${mode}`}>
             <form>
             <h1>Login</h1>
                 <label htmlFor="username">

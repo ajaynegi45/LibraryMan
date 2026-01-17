@@ -29,6 +29,23 @@
     border: 2px solid #0aa5ff;
 }
 
+/* Container for search status messages */
+.search-status-container {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.status-text {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+    border-bottom: 2px solid #2ecc71;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
 @media (max-width: 900px) {
 
     .searchBook-div input {
